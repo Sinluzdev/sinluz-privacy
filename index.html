@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SinLuz — Política de Privacidad y Términos</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #0D2818;
+    color: #F9FAFB;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 40px 24px 80px;
+  }
+  header {
+    text-align: center;
+    padding-bottom: 32px;
+    border-bottom: 1px solid rgba(249,250,251,0.12);
+    margin-bottom: 40px;
+  }
+  h1 {
+    font-size: 28px;
+    margin: 0 0 8px;
+    color: #FBBF24;
+  }
+  .subtitle {
+    font-size: 14px;
+    color: #D1FAE5;
+    opacity: 0.8;
+  }
+  h2 {
+    font-size: 20px;
+    color: #10B981;
+    margin-top: 40px;
+    margin-bottom: 16px;
+    border-left: 4px solid #10B981;
+    padding-left: 12px;
+  }
+  h3 {
+    font-size: 16px;
+    color: #FBBF24;
+    margin-top: 24px;
+    margin-bottom: 8px;
+  }
+  p, li {
+    font-size: 14px;
+    color: #E5E7EB;
+  }
+  ul {
+    padding-left: 20px;
+  }
+  li {
+    margin-bottom: 6px;
+  }
+  strong { color: #F9FAFB; }
+  .highlight {
+    background: rgba(251,191,36,0.1);
+    border-left: 3px solid #FBBF24;
+    padding: 14px 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 13px;
+  }
+  .warning {
+    background: rgba(239,68,68,0.1);
+    border-left: 3px solid #EF4444;
+    padding: 14px 16px;
+    border-radius: 6px;
+    margin: 20px 0;
+    font-size: 13px;
+  }
+  a {
+    color: #10B981;
+    text-decoration: none;
+  }
+  a:hover { text-decoration: underline; }
+  footer {
+    margin-top: 60px;
+    padding-top: 24px;
+    border-top: 1px solid rgba(249,250,251,0.12);
+    font-size: 12px;
+    text-align: center;
+    color: #9CA3AF;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <header>
+    <h1>SinLuz</h1>
+    <div class="subtitle">Política de Privacidad y Términos de Uso</div>
+  </header>
+
+  <div class="highlight">
+    <strong>Última actualización:</strong> 3 de octubre de 2026<br>
+    <strong>Contacto:</strong> <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a>
+  </div>
+
+  <h2>1. Declaración de Independencia</h2>
+  <p>
+    SinLuz es una plataforma tecnológica privada, independiente, autónoma y de carácter
+    estrictamente colaborativo y ciudadano. <strong>NO está afiliada, asociada, patrocinada,
+    financiada, autorizada, supervisada, operada ni respaldada en modo alguno por ninguna
+    entidad gubernamental, ministerio, gobernación, alcaldía, organismo regulador, ni por
+    ninguna corporación prestadora del servicio eléctrico</strong> (incluyendo, sin carácter
+    limitativo, a CORPOELEC o cualquier ente adscrito al Sistema Eléctrico Nacional).
+  </p>
+  <p>
+    Toda la información mostrada (polígonos de afectación, cronómetros, índices de estabilidad,
+    notificaciones) tiene carácter meramente informativo, estadístico y probabilístico. Deriva
+    exclusivamente de la agregación de reportes ciudadanos y lecturas pasivas de sensores de
+    red de los propios dispositivos participantes. <strong>En ningún caso constituyen boletines
+    oficiales ni diagnósticos técnicos certificables de la red eléctrica.</strong>
+  </p>
+
+  <h2>2. Datos que Recolectamos</h2>
+
+  <h3>2.1 Identificador Anónimo</h3>
+  <p>
+    Al iniciar la aplicación por primera vez se genera de forma local y aleatoria un
+    identificador alfanumérico (UUID v4). <strong>Este identificador no guarda relación alguna
+    con su nombre real, correo electrónico, número telefónico, tarjeta SIM ni código IMEI.</strong>
+  </p>
+
+  <h3>2.2 Ubicación Geográfica</h3>
+  <p>
+    Cuando usted visualiza el mapa, envía un reporte o autoriza la telemetría colaborativa en
+    segundo plano, la aplicación obtiene coordenadas de latitud y longitud del proveedor
+    fusionado de ubicación de Android.
+  </p>
+  <ul>
+    <li><strong>Propósito:</strong> asociar reportes a un polígono geográfico, mostrar cortes cercanos, y detectar apagones automáticamente por correlación de caídas de red entre varios dispositivos.</li>
+    <li><strong>Almacenamiento local:</strong> las direcciones que usted guarda ("Mi Hogar", "Trabajo") se almacenan en una base de datos interna SQLite del teléfono y solo se sincronizan con el servidor cuando usted lo decide.</li>
+  </ul>
+
+  <h3>2.3 Telemetría de Red y Estado del Dispositivo</h3>
+  <ul>
+    <li>Estado de conexión WiFi (conectado/desconectado, sin registrar contraseñas ni tráfico).</li>
+    <li>Tipo de red activo (WiFi / Datos Móviles) e intensidad de señal en dBm.</li>
+    <li>Estado de carga de batería y porcentaje.</li>
+  </ul>
+
+  <h2>3. Datos que NUNCA Recolectamos</h2>
+  <div class="warning">
+    SinLuz <strong>NUNCA</strong> solicita, lee, almacena ni transmite:
+  </div>
+  <ul>
+    <li>Su nombre y apellido real (el apodo en Ajustes es 100% opcional y local).</li>
+    <li>Su número telefónico, tarjeta SIM, IMSI o registros de llamadas/SMS.</li>
+    <li>Lista de contactos, calendario o cuentas de correo sincronizadas.</li>
+    <li>Fotografías, videos, archivos multimedia ni documentos.</li>
+    <li>El micrófono o la cámara del dispositivo.</li>
+    <li>El contenido de páginas web que usted visita ni tráfico de su red WiFi.</li>
+  </ul>
+
+  <h2>4. Servicios de Terceros</h2>
+
+  <h3>4.1 Infraestructura en la Nube (Supabase)</h3>
+  <p>
+    Los reportes y pulsos de telemetría (UUID anónimo, coordenadas, estado eléctrico y marca
+    de tiempo) se transmiten mediante conexiones cifradas HTTPS/TLS hacia nuestra base de
+    datos en la nube (Supabase, región São Paulo).
+  </p>
+
+  <h3>4.2 Notificaciones Push (Firebase Cloud Messaging)</h3>
+  <p>
+    Utilizamos Firebase Cloud Messaging de Google para enviar notificaciones sobre apagones
+    detectados en las zonas que usted monitorea. Google procesa el envío conforme a su
+    propia política de privacidad.
+  </p>
+
+  <h3>4.3 Publicidad (Google AdMob) — Solo en versión gratuita</h3>
+  <p>
+    En la versión gratuita se utiliza el SDK de Google Mobile Ads (AdMob) para mostrar
+    banners. Si usted otorga su consentimiento en el diálogo correspondiente, Google AdMob
+    puede emplear identificadores publicitarios del dispositivo para mostrar anuncios
+    relevantes. Usted puede elegir anuncios no personalizados o desactivar los anuncios
+    activando el modo Pro.
+  </p>
+
+  <h3>4.4 No Venta de Datos</h3>
+  <p>
+    SinLuz <strong>jamás vende, alquila, comercializa ni cede</strong> bases de datos de
+    ubicación o telemetría a corredores de datos, agencias de mercadeo ni entidades públicas
+    o privadas.
+  </p>
+
+  <h2>5. Control y Derechos del Usuario</h2>
+  <ul>
+    <li><strong>Notificaciones:</strong> puede pausarlas desde la pestaña "Alertas".</li>
+    <li><strong>Permiso de ubicación:</strong> puede revocarlo desde Configuración de Android → Aplicaciones → SinLuz → Permisos.</li>
+    <li><strong>Eliminar ubicaciones guardadas:</strong> con un toque en el ícono de papelera.</li>
+    <li><strong>Supresión total:</strong> en "Ajustes → Privacidad y Datos → Borrar todos mis datos", se purga toda la información local y se reinicia el identificador anónimo.</li>
+  </ul>
+
+  <h2>6. Uso Aceptable y Conducta del Usuario</h2>
+  <p>
+    Queda prohibido al usuario:
+  </p>
+  <ul>
+    <li>Descompilar, aplicar ingeniería inversa o intentar derivar los algoritmos de SinLuz.</li>
+    <li>Utilizar emuladores, scripts de inyección de coordenadas falsas (GPS spoofing) o bots para alterar artificialmente el estado de los mapas.</li>
+    <li>Interceptar, alterar o saturar los endpoints de sincronización.</li>
+    <li>Introducir contenido difamatorio, incitación al odio, pánico financiero o contenido ilícito.</li>
+  </ul>
+  <p>
+    SinLuz se reserva el derecho de descartar, atenuar el peso estadístico o bloquear
+    silenciosamente las emisiones provenientes de identificadores que presenten patrones
+    anómalos o incongruentes con las lecturas de red vecinas.
+  </p>
+
+  <h2>7. Modalidades Gratuita y Pro</h2>
+  <p>
+    El acceso básico (mapa, reportes manuales, alertas comunitarias, telemetría colaborativa)
+    se ofrece sin costo, financiándose con anuncios tipo banner de Google AdMob.
+  </p>
+  <p>
+    Los usuarios que activen la modalidad Pro podrán disfrutar de:
+  </p>
+  <ul>
+    <li>Supresión integral de anuncios.</li>
+    <li>Widget de pantalla de inicio con monitoreo en vivo.</li>
+    <li>Registro de hasta 10 ubicaciones guardadas (vs 3 en Free).</li>
+    <li>Alertas con mayor anticipación.</li>
+  </ul>
+  <p>
+    <strong>Precio:</strong> $1.99/mes o $14.99/año. Se aplica prueba gratuita de 7 días.
+    La gestión y cancelación de la suscripción se realiza exclusivamente a través de Google
+    Play conforme a sus políticas.
+  </p>
+
+  <h2>8. Exención de Garantías</h2>
+  <div class="warning">
+    <strong>EL SOFTWARE SE PROPORCIONA "TAL CUAL" ("AS IS") Y "SEGÚN DISPONIBILIDAD"
+    ("AS AVAILABLE"), SIN GARANTÍAS DE NINGÚN TIPO.</strong>
+  </div>
+  <p>
+    En ningún caso los desarrolladores, creadores, colaboradores o proveedores de
+    infraestructura de SinLuz serán responsables ante el usuario ni ante terceros por
+    daños directos, indirectos, incidentales, especiales, emergentes, punitivos o lucro
+    cesante (incluyendo, a título enunciativo pero no limitativo: quema o avería de
+    electrodomésticos, equipos de refrigeración, computadoras o maquinaria industrial por
+    fluctuaciones de voltaje; pérdida de alimentos o insumos; interrupción de actividades
+    comerciales; o decisiones de traslado físico tomadas con base en el mapa de la
+    aplicación), aun cuando se haya advertido de la posibilidad de tales daños.
+  </p>
+  <p>
+    <strong>Recomendación:</strong> el usuario reconoce que ninguna aplicación móvil sustituye
+    el uso de protectores de voltaje físicos, reguladores, UPS o plantas eléctricas de
+    emergencia.
+  </p>
+
+  <h2>9. Uso de Recursos del Dispositivo</h2>
+  <p>
+    SinLuz ha sido diseñada bajo arquitecturas reactivas orientadas a eventos del sistema
+    Android (BroadcastReceivers y WorkManager con intervalos espaciados) para minimizar el
+    impacto sobre la batería. No obstante, el uso prolongado de la pantalla encendida o la
+    descarga inicial de teselas del mapa para caché offline consumirá energía y tráfico de
+    datos de su operador móvil o red WiFi.
+  </p>
+  <p>
+    Cuando el usuario autoriza la ubicación en segundo plano ("Permitir todo el tiempo"),
+    dicha facultad se emplea única y exclusivamente para asociar coordenadas geográficas al
+    momento en que los sensores del teléfono detectan una desconexión eléctrica o de red
+    colectiva.
+  </p>
+
+  <h2>10. Propiedad Intelectual y Atribuciones</h2>
+  <p>
+    Todos los derechos de propiedad intelectual sobre el diseño de interfaz, arquitectura
+    de código, logotipos, iconografía y estructura de base de datos pertenecen exclusivamente
+    a sus creadores.
+  </p>
+  <p>
+    Los datos de mapas base y nomenclatura vial son provistos por colaboradores de
+    <strong>OpenStreetMap</strong> (© OpenStreetMap contributors) bajo licencia ODbL y
+    librerías de renderizado <strong>Leaflet</strong> bajo licencia BSD-2-Clause.
+  </p>
+
+  <h2>11. Modificaciones y Legislación</h2>
+  <p>
+    SinLuz podrá modificar o actualizar estos Términos y Condiciones en cualquier momento
+    para adaptarlos a nuevas funcionalidades técnicas o requerimientos de Google Play Store,
+    bastando para ello la publicación de la nueva revisión en esta misma página.
+  </p>
+  <p>
+    Si cualquier disposición de este documento fuese declarada nula o inaplicable, las
+    restantes cláusulas conservarán su plena validez y eficacia jurídica.
+  </p>
+
+  <h2>12. Contacto</h2>
+  <p>
+    Para notificaciones legales, soporte técnico o solicitudes vinculadas con este acuerdo:
+  </p>
+  <p>
+    <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a>
+  </p>
+
+  <footer>
+    © 2026 SinLuz · Plataforma colaborativa ciudadana independiente
+  </footer>
+
+</div>
+</body>
+</html>
