@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SinLuz — Instrumento Normativo de Privacidad y Términos</title>
+<title>SinLuz — Instrumento Normativo Integral de Privacidad, Tratamiento de Datos y Condiciones Generales</title>
 <style>
   * { box-sizing: border-box; }
   body {
@@ -12,98 +12,137 @@
     color: #E5E7EB;
     margin: 0;
     padding: 0;
-    line-height: 1.75;
+    line-height: 1.7;
     font-size: 15px;
   }
   .container {
-    max-width: 900px;
+    max-width: 920px;
     margin: 0 auto;
-    padding: 50px 30px 90px;
+    padding: 50px 34px 100px;
   }
   header {
     text-align: center;
-    padding-bottom: 32px;
-    border-bottom: 1px solid rgba(249,250,251,0.15);
+    padding-bottom: 30px;
+    border-bottom: 2px solid rgba(251,191,36,0.4);
     margin-bottom: 40px;
   }
   h1 {
     font-size: 26px;
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     color: #FBBF24;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.4px;
     font-weight: 700;
+    line-height: 1.3;
   }
   .subtitle {
     font-size: 13px;
     color: #D1FAE5;
     opacity: 0.85;
     font-style: italic;
+    line-height: 1.5;
+  }
+  .doc-meta {
+    background: rgba(251,191,36,0.08);
+    border-left: 4px solid #FBBF24;
+    padding: 16px 22px;
+    border-radius: 4px;
+    margin: 28px 0;
+    font-size: 13px;
+    line-height: 1.7;
   }
   h2 {
-    font-size: 17px;
-    color: #10B981;
-    margin-top: 44px;
-    margin-bottom: 18px;
+    font-size: 18px;
+    color: #FBBF24;
+    margin-top: 48px;
+    margin-bottom: 20px;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
+    letter-spacing: 1.5px;
     font-weight: 700;
-    border-bottom: 1px solid rgba(16,185,129,0.35);
-    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(251,191,36,0.35);
+    padding-bottom: 8px;
   }
   h3 {
-    font-size: 15px;
-    color: #FBBF24;
-    margin-top: 26px;
-    margin-bottom: 10px;
+    font-size: 16px;
+    color: #10B981;
+    margin-top: 30px;
+    margin-bottom: 12px;
     font-weight: 700;
     letter-spacing: 0.3px;
   }
   h4 {
-    font-size: 14px;
+    font-size: 14.5px;
     color: #FBBF24;
-    margin-top: 18px;
-    margin-bottom: 8px;
-    font-weight: 600;
+    margin-top: 22px;
+    margin-bottom: 10px;
+    font-weight: 700;
     font-style: italic;
   }
+  h5 {
+    font-size: 13.5px;
+    color: #10B981;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 700;
+    letter-spacing: 0.2px;
+  }
   p, li {
-    font-size: 14.5px;
+    font-size: 14px;
     color: #E5E7EB;
     text-align: justify;
     hyphens: auto;
+    margin-bottom: 12px;
   }
   ul, ol {
-    padding-left: 22px;
+    padding-left: 24px;
+    margin-bottom: 14px;
   }
   li {
-    margin-bottom: 8px;
+    margin-bottom: 10px;
+    line-height: 1.65;
   }
   strong { color: #F9FAFB; font-weight: 700; }
   em { color: #D1FAE5; font-style: italic; }
   .highlight {
     background: rgba(251,191,36,0.08);
     border-left: 3px solid #FBBF24;
-    padding: 16px 20px;
+    padding: 16px 22px;
     border-radius: 4px;
     margin: 24px 0;
     font-size: 13px;
+    text-align: justify;
   }
   .warning {
     background: rgba(239,68,68,0.1);
     border-left: 3px solid #EF4444;
-    padding: 16px 20px;
+    padding: 16px 22px;
     border-radius: 4px;
     margin: 24px 0;
     font-size: 13.5px;
     text-align: justify;
   }
   .definition {
-    background: rgba(16,185,129,0.07);
+    background: rgba(16,185,129,0.06);
     border: 1px solid rgba(16,185,129,0.25);
-    padding: 14px 18px;
+    padding: 14px 20px;
     border-radius: 4px;
-    margin: 18px 0;
+    margin: 16px 0;
     font-size: 13.5px;
+  }
+  .clause {
+    font-weight: 700;
+    color: #FBBF24;
+  }
+  .sub-clause {
+    font-weight: 700;
+    color: #10B981;
+  }
+  code {
+    background: rgba(249,250,251,0.08);
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: "SF Mono", Monaco, Consolas, monospace;
+    font-size: 12.5px;
+    color: #10B981;
   }
   a {
     color: #10B981;
@@ -119,18 +158,51 @@
     text-align: center;
     color: #9CA3AF;
     font-style: italic;
+    line-height: 1.7;
   }
-  .clausula {
-    font-weight: 700;
+  .toc {
+    background: rgba(16,185,129,0.06);
+    border: 1px solid rgba(16,185,129,0.22);
+    padding: 20px 26px;
+    border-radius: 6px;
+    margin: 30px 0;
+    font-size: 13px;
+  }
+  .toc h3 {
+    margin-top: 0;
     color: #FBBF24;
+    font-size: 15px;
   }
-  code {
-    background: rgba(249,250,251,0.08);
-    padding: 2px 6px;
-    border-radius: 3px;
-    font-family: "SF Mono", Monaco, Consolas, monospace;
+  .toc ol {
+    margin: 8px 0 0;
+    padding-left: 22px;
+  }
+  .toc li {
+    margin-bottom: 4px;
     font-size: 12.5px;
-    color: #10B981;
+    color: #D1FAE5;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 13px;
+  }
+  th, td {
+    border: 1px solid rgba(249,250,251,0.15);
+    padding: 10px 12px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th {
+    background: rgba(16,185,129,0.15);
+    color: #FBBF24;
+    font-weight: 700;
+    font-size: 12.5px;
+  }
+  td {
+    color: #E5E7EB;
+    line-height: 1.6;
   }
 </style>
 </head>
@@ -138,95 +210,292 @@
 <div class="container">
 
   <header>
-    <h1>Instrumento Normativo Integral de Privacidad, Tratamiento de Telemetría Pseudoanonimizada y Condiciones Generales de Uso</h1>
+    <h1>INSTRUMENTO NORMATIVO INTEGRAL DE PRIVACIDAD, TRATAMIENTO DE DATOS PSEUDOANONIMIZADOS, CONDICIONES GENERALES DE USO Y RÉGIMEN DE RESPONSABILIDAD DE LA PLATAFORMA TECNOLÓGICA SINLUZ</h1>
     <div class="subtitle">
-      Plataforma Tecnológica SinLuz · Revisión Normativa Rev. 5.1-ES<br>
-      Conforme a los estándares del Programa de Desarrolladores de Google Play
+      Revisión Normativa Rev. 7.2-ES · Conforme al Programa de Desarrolladores de Google Play<br>
+      Alineado con los principios del Reglamento General de Protección de Datos (RGPD/UE 2016/679)<br>
+      Adoptado conforme a la Ley Especial contra los Delitos Informáticos (Venezuela) y normativa aplicable
     </div>
   </header>
 
-  <div class="highlight">
+  <div class="doc-meta">
     <strong>Fecha de entrada en vigor:</strong> 3 de octubre de 2026<br>
-    <strong>Jurisdicción de referencia:</strong> República Bolivariana de Venezuela<br>
-    <strong>Canal oficial de notificaciones legales:</strong>
-    <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a>
+    <strong>Última revisión normativa:</strong> Rev. 7.2-ES<br>
+    <strong>Jurisdicción primaria de referencia:</strong> República Bolivariana de Venezuela<br>
+    <strong>Jurisdicciones secundarias reconocidas:</strong> Brasil (LGPD), Unión Europea (RGPD) y Estados Unidos (CCPA/CPRA) respecto a usuarios residentes en dichos territorios<br>
+    <strong>Canal oficial de notificaciones legales:</strong> <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a><br>
+    <strong>Idioma auténtico del instrumento:</strong> Español (Venezuela)
   </div>
 
-  <h2>Preámbulo</h2>
+  <div class="toc">
+    <h3>Índice General de Contenido</h3>
+    <ol>
+      <li>Preámbulo y Considerandos</li>
+      <li>Cláusula Primera — Glosario Técnico-Jurídico</li>
+      <li>Cláusula Segunda — Ámbito de Aplicación Material y Territorial</li>
+      <li>Cláusula Tercera — Declaración Exprés de Independencia</li>
+      <li>Cláusula Cuarta — Categorías de Datos Tratados</li>
+      <li>Cláusula Quinta — Categorías de Datos No Tratados</li>
+      <li>Cláusula Sexta — Bases Jurídicas del Tratamiento</li>
+      <li>Cláusula Séptima — Plazos de Retención y Ciclos de Vida del Dato</li>
+      <li>Cláusula Octava — Encargados, Subencargados y Transferencias Internacionales</li>
+      <li>Cláusula Novena — Medidas de Seguridad Técnicas y Organizativas</li>
+      <li>Cláusula Décima — Derechos del Titular de los Datos</li>
+      <li>Cláusula Undécima — Menores de Edad y Capacidad Legal</li>
+      <li>Cláusula Duodécima — Cookies, Identificadores y Tecnologías Similares</li>
+      <li>Cláusula Decimotercera — Toma de Decisiones Automatizadas y Perfilado</li>
+      <li>Cláusula Decimocuarta — Régimen de Reportes Ciudadanos</li>
+      <li>Cláusula Decimoquinta — Sistema de Confirmación por Votación Geográfica</li>
+      <li>Cláusula Decimosexta — Modalidades de Servicio (Free / Pro / B2B)</li>
+      <li>Cláusula Decimoséptima — Régimen de Datos Agregados y API Empresarial</li>
+      <li>Cláusula Decimoctava — Uso Aceptable y Conducta Prohibida</li>
+      <li>Cláusula Decimonovena — Propiedad Intelectual</li>
+      <li>Cláusula Vigésima — Exención de Garantías</li>
+      <li>Cláusula Vigesimoprimera — Limitación de Responsabilidad</li>
+      <li>Cláusula Vigesimosegunda — Indemnización por el Usuario</li>
+      <li>Cláusula Vigesimotercera — Modificaciones, Vigencia y Divisibilidad</li>
+      <li>Cláusula Vigesimocuarta — Resolución de Conflictos y Legislación Aplicable</li>
+      <li>Cláusula Vigesimoquinta — Contacto Oficial</li>
+      <li>Anexo A — Inventario Detallado de Categorías de Datos</li>
+      <li>Anexo B — Lista de Subencargados del Tratamiento</li>
+      <li>Anexo C — Tabla de Plazos de Retención</li>
+      <li>Anexo D — Matriz de Bases Legales por Jurisdicción</li>
+      <li>Anexo E — Registro de Versiones del Instrumento</li>
+    </ol>
+  </div>
+
+  <h2>Preámbulo y Considerandos</h2>
+
   <p>
-    El presente instrumento jurídico constituye un acuerdo vinculante entre el usuario
-    (en lo sucesivo, el <em>"Licenciatario"</em>, <em>"Nodo Ciudadano"</em> o
-    <em>"Colaborador Voluntario"</em>) y los operadores técnicos independientes de la
-    plataforma <strong>SinLuz</strong> (en adelante, indistintamente,
-    <em>"la Plataforma"</em>, <em>"el Sistema"</em> o <em>"el Prestador"</em>). La
-    instalación, activación, utilización o mera presencia del binario compilado en el
-    terminal del Licenciatario implica la aceptación íntegra, expresa, incondicional e
-    irrevocable de la totalidad de las cláusulas, subcláusulas, anexos y apéndices que
-    se desarrollan a continuación.
+    <span class="clause">CONSIDERANDO</span> que la Plataforma Tecnológica SinLuz (en lo sucesivo,
+    indistintamente, <em>"SinLuz"</em>, <em>"la Plataforma"</em>, <em>"el Sistema"</em>,
+    <em>"el Prestador"</em> o <em>"el Responsable del Tratamiento"</em>) constituye una iniciativa
+    tecnológica privada, autónoma, de naturaleza estrictamente colaborativa y ciudadana, orientada
+    a la agregación estadística de señales de telemetría pasiva provenientes de Terminales
+    Participantes voluntariamente adheridos;
   </p>
 
-  <h2>Cláusula Primera — Glosario Técnico y Definiciones Operativas</h2>
+  <p>
+    <span class="clause">CONSIDERANDO</span> que la operación técnica de la Plataforma requiere el
+    tratamiento de determinadas categorías de datos técnicos pseudoanonimizados, bajo estrictos
+    principios de minimización, finalidad específica, limitación temporal, integridad,
+    confidencialidad y responsabilidad proactiva (<em>accountability</em>);
+  </p>
+
+  <p>
+    <span class="clause">CONSIDERANDO</span> que el presente Instrumento Normativo Integral
+    (en adelante, <em>"el Instrumento"</em> o <em>"el Contrato"</em>) tiene por objeto regular
+    de manera exhaustiva, sistemática y vinculante la totalidad de las relaciones jurídicas
+    derivadas de la instalación, activación, uso continuado o mera presencia del binario
+    compilado de SinLuz en el terminal del Licenciatario;
+  </p>
+
+  <p>
+    <span class="clause">CONSIDERANDO</span> que el Licenciatario, mediante la aceptación expresa
+    o tácita del presente Instrumento, declara haber leído, comprendido y aceptado de manera
+    íntegra, incondicional e irrevocable la totalidad de las cláusulas, subcláusulas, literales,
+    anexos, apéndices y tablas que se desarrollan a continuación;
+  </p>
+
+  <p>
+    <span class="clause">CONSIDERANDO</span> finalmente que, en caso de discrepancia interpretativa
+    entre el presente Instrumento y cualquier comunicación comercial, material publicitario,
+    descripción de tienda de aplicaciones o manifestación verbal de cualquier naturaleza, prevalecerá
+    siempre el texto contenido en el presente Instrumento Normativo Integral;
+  </p>
+
+  <p>
+    <strong>SE ESTABLECEN, POR CONSIGUIENTE, LAS SIGUIENTES CLÁUSULAS:</strong>
+  </p>
+
+  <h2>Cláusula Primera — Glosario Técnico-Jurídico</h2>
+
+  <p>
+    A los efectos de la interpretación, ejecución y cumplimiento del presente Instrumento, los
+    términos que se indican a continuación tendrán el significado técnico-jurídico que aquí se
+    les atribuye, con independencia de definiciones divergentes que pudieran aparecer en otros
+    documentos de la Plataforma:
+  </p>
 
   <div class="definition">
     <h4>1.1. Nodo Ciudadano o Terminal Participante</h4>
     <p>
-      Dispositivo móvil con sistema operativo Android en el cual el Licenciatario ha
-      instalado voluntariamente la aplicación SinLuz y ha otorgado los permisos
-      operativos correspondientes, incluyendo —sin carácter limitativo— los permisos
-      de acceso a la ubicación precisa y aproximada, estado de conectividad de red y
-      notificaciones push.
+      Dispositivo móvil con sistema operativo Android en el cual el Licenciatario ha instalado
+      voluntariamente el binario de SinLuz y ha otorgado los permisos operativos correspondientes,
+      incluyendo —sin carácter limitativo— los permisos de acceso a la ubicación precisa y
+      aproximada, estado de conectividad de red, y recepción de notificaciones push.
     </p>
 
     <h4>1.2. Telemetría Pasiva No Intrusiva</h4>
     <p>
       Conjunto de lecturas técnicas automatizadas, de bajo consumo energético, realizadas
-      localmente por el Terminal Participante. Comprende el estado de vinculación de la
-      interfaz inalámbrica (<code>WiFi SSID link state</code>), transiciones abruptas
-      hacia datos móviles celulares, estado del suministro de carga en puerto USB/AC,
-      variaciones del nivel porcentual de batería, tipo de transporte de red activo e
-      intensidad de señal en decibelios-milivatio (<code>dBm</code>). No comprende, en
-      ningún caso, la intercepción de tráfico, contenido de paquetes, credenciales de
-      acceso ni metadatos de navegación.
+      localmente por el Terminal Participante, comprendiendo exclusivamente el estado de
+      vinculación de la interfaz inalámbrica (<code>WiFi SSID link state</code>), transiciones
+      abruptas hacia datos móviles celulares, estado del suministro de carga en puerto USB/AC,
+      variaciones del nivel porcentual de batería, tipo de transporte de red activo e intensidad
+      de señal en decibelios-milivatio (<code>dBm</code>).
     </p>
 
     <h4>1.3. Inferencia Estadística Colectiva</h4>
     <p>
-      Algoritmo de clustering espacial (DBSCAN) combinado con envolventes cóncavas
-      (<em>Concave Hull</em>) y funciones geoespaciales PostGIS, empleado para correlacionar
-      múltiples eventos simultáneos de pérdida de conectividad inalámbrica en un radio
-      geográfico determinado durante una ventana temporal acotada, con el propósito de
-      estimar la probabilidad de un corte de energía frente a una desconexión doméstica
-      aislada.
+      Algoritmo de clustering espacial DBSCAN (<em>Density-Based Spatial Clustering of
+      Applications with Noise</em>), combinado con envolventes cóncavas (<em>Concave Hull</em>)
+      y funciones geoespaciales PostGIS, empleado para correlacionar múltiples eventos
+      simultáneos de pérdida de conectividad inalámbrica en un radio geográfico determinado
+      durante una ventana temporal acotada.
     </p>
 
     <h4>1.4. Polígono Dinámico de Afectación</h4>
     <p>
-      Representación geométrica vectorial renderizada sobre el lienzo cartográfico de
-      SinLuz que delimita de forma aproximada el sector urbano, cuadrante, circuito o
-      urbanización donde convergen reportes manuales o eventos de telemetría verificados.
+      Representación geométrica vectorial renderizada sobre el lienzo cartográfico de SinLuz
+      que delimita de forma aproximada el sector urbano, cuadrante, circuito o urbanización
+      donde convergen reportes manuales o eventos de telemetría verificados.
     </p>
 
-    <h4>1.5. Datos Agregados y Pseudoanonimizados</h4>
+    <h4>1.5. Bloque de Afectación Eléctrica</h4>
     <p>
-      Conjunto de información que, habiendo sido sometida a procesos de agregación
-      estadística, generalización y aplicación de técnicas de <em>k-anonimato</em>
-      (k ≥ 5), resulta incapaz de vincularse a una persona natural determinada o
-      determinable, perdiendo la naturaleza jurídica de dato personal conforme a los
-      estándares internacionales aplicables.
+      Unidad lógica-temporal que agrupa uno o más eventos de apagón iniciados dentro de una
+      ventana temporal configurable (por defecto, veinte (20) minutos), permitiendo la
+      reconstrucción del comportamiento agregado de la red de distribución eléctrica.
     </p>
 
-    <h4>1.6. Bloque de Afectación Eléctrica</h4>
+    <h4>1.6. Datos Pseudoanonimizados</h4>
     <p>
-      Unidad lógica-temporal que agrupa uno o más eventos de apagón iniciados dentro
-      de una ventana temporal configurable (por defecto, veinte (20) minutos), permitiendo
-      la reconstrucción del comportamiento agregado de la red de distribución eléctrica.
+      Aquellos datos personales que, habiendo sido sometidos a un proceso de
+      pseudoanonimización mediante el cual la información ya no puede atribuirse a un titular
+      sin el uso de información adicional, mantienen la posibilidad técnica de re-identificación
+      mediante el cruce con dicha información adicional, la cual es conservada de forma separada
+      y sujeta a medidas técnicas y organizativas específicas.
+    </p>
+
+    <h4>1.7. Datos Agregados</h4>
+    <p>
+      Conjunto de información que, habiendo sido sometida a procesos de agregación estadística,
+      generalización y aplicación de técnicas de <em>k-anonimato</em> (con valor mínimo
+      <code>k ≥ 5</code>), resulta incapaz de vincularse a una persona natural determinada o
+      determinable, perdiendo la naturaleza jurídica de dato personal.
+    </p>
+
+    <h4>1.8. Titular del Dato</h4>
+    <p>
+      Persona natural cuyos datos personales son objeto de tratamiento. Para los efectos del
+      presente Instrumento, el Titular del Dato coincide con el Licenciatario.
+    </p>
+
+    <h4>1.9. Responsable del Tratamiento</h4>
+    <p>
+      Persona natural o jurídica que decide sobre las finalidades y los medios del tratamiento
+      de datos personales. Para los efectos del presente Instrumento, el Responsable del
+      Tratamiento es el operador técnico independiente de la Plataforma SinLuz.
+    </p>
+
+    <h4>1.10. Encargado del Tratamiento</h4>
+    <p>
+      Persona natural o jurídica que trata datos personales por cuenta del Responsable,
+      conforme a sus instrucciones documentadas. Se detallan en el Anexo B.
+    </p>
+
+    <h4>1.11. Subencargado del Tratamiento</h4>
+    <p>
+      Persona natural o jurídica contratada por un Encargado para llevar a cabo actividades
+      específicas de tratamiento por cuenta del Responsable.
+    </p>
+
+    <h4>1.12. Transferencia Internacional de Datos</h4>
+    <p>
+      Comunicación de datos personales a un tercero establecido en un país distinto al del
+      Responsable, incluyendo el acceso a dichos datos desde el extranjero.
+    </p>
+
+    <h4>1.13. Violación de Seguridad de Datos Personales</h4>
+    <p>
+      Toda acción u omisión que ocasione la destrucción, pérdida, alteración, comunicación o
+      acceso no autorizado, accidental o ilícito, a datos personales objeto de tratamiento.
+    </p>
+
+    <h4>1.14. Autoridad de Control</h4>
+    <p>
+      Organismo público independiente encargado de supervisar la aplicación de la normativa de
+      protección de datos personales en la jurisdicción correspondiente.
+    </p>
+
+    <h4>1.15. Interesado</h4>
+    <p>
+      Sinónimo de Titular del Dato, empleado indistintamente a lo largo del presente Instrumento.
+    </p>
+
+    <h4>1.16. Perfilado</h4>
+    <p>
+      Toda forma de tratamiento automatizado de datos personales que consista en utilizar
+      dichos datos para evaluar determinados aspectos personales de una persona natural,
+      en particular para analizar o predecir aspectos relativos al rendimiento profesional,
+      situación económica, salud, preferencias personales, intereses, fiabilidad, comportamiento,
+      ubicación o movimientos.
+    </p>
+
+    <h4>1.17. Elaboración de Perfiles con Fines Predictivos</h4>
+    <p>
+      Modalidad específica de perfilado orientada a la anticipación probabilística de eventos
+      futuros relacionados con el suministro eléctrico, sin que ello implique evaluación de
+      aspectos personales del Titular.
+    </p>
+
+    <h4>1.18. Token de Notificación Push</h4>
+    <p>
+      Identificador alfanumérico único, emitido por Firebase Cloud Messaging, que permite la
+      entrega de notificaciones específicas al Terminal Participante.
+    </p>
+
+    <h4>1.19. UUID v4</h4>
+    <p>
+      Identificador Único Universal versión 4, generado aleatoriamente conforme a la
+      especificación RFC 4122, sin incorporación de datos personales en su composición.
+    </p>
+
+    <h4>1.20. k-Anonimato</h4>
+    <p>
+      Propiedad de un conjunto de datos por la cual cada registro es indistinguible de al
+      menos <code>k-1</code> otros registros respecto a un conjunto de cuasi-identificadores,
+      garantizando que ningún individuo pueda ser identificado con probabilidad superior a
+      <code>1/k</code>.
     </p>
   </div>
 
-  <h2>Cláusula Segunda — Declaración Exprés de Independencia y No Afiliación Gubernamental</h2>
+  <h2>Cláusula Segunda — Ámbito de Aplicación Material y Territorial</h2>
 
   <p>
-    <span class="clausula">2.1.</span> Se deja constancia exprés, pública e inequívoca de que
+    <span class="clause">2.1. Ámbito material.</span> El presente Instrumento se aplica a la
+    totalidad del tratamiento de datos personales y pseudoanonimizados realizado por SinLuz
+    en el marco de la operación de su plataforma tecnológica, comprendiendo —sin carácter
+    limitativo— la recolección, registro, organización, estructuración, conservación,
+    adaptación, modificación, extracción, consulta, utilización, comunicación por transmisión,
+    difusión o cualquier otra forma de habilitación de acceso, cotejo o interconexión,
+    limitación, supresión o destrucción de datos.
+  </p>
+
+  <p>
+    <span class="clause">2.2. Ámbito territorial.</span> El presente Instrumento se aplica
+    al tratamiento de datos efectuado en el territorio de la República Bolivariana de Venezuela.
+    Adicionalmente, y en la medida en que usuarios residentes en otras jurisdicciones empleen
+    la Plataforma, se reconocerán las garantías adicionales previstas en la legislación
+    aplicable de dichas jurisdicciones conforme a la Matriz de Bases Legales por Jurisdicción
+    contenida en el Anexo D del presente Instrumento.
+  </p>
+
+  <p>
+    <span class="clause">2.3. Exclusiones.</span> El presente Instrumento no se aplica a:
+  </p>
+  <ul>
+    <li>Datos tratados por terceros independientes cuyas políticas de privacidad resulten aplicables de forma autónoma;</li>
+    <li>Datos anónimos, irreversiblemente desvinculados de cualquier titular;</li>
+    <li>Datos tratados por autoridades públicas en ejercicio de sus competencias legales;</li>
+    <li>Datos cuya finalidad sea exclusivamente doméstica o personal, sin conexión con actividad profesional o comercial.</li>
+  </ul>
+
+  <h2>Cláusula Tercera — Declaración Exprés de Independencia y No Afiliación</h2>
+
+  <p>
+    <span class="clause">3.1.</span> Se deja constancia exprés, pública e inequívoca de que
     SinLuz constituye una iniciativa tecnológica privada, independiente, autónoma, de carácter
     estrictamente colaborativo y ciudadano, <strong>sin vinculación, afiliación, patrocinio,
     financiamiento, autorización, supervisión, operación ni respaldo alguno</strong> por parte
@@ -237,49 +506,84 @@
   </p>
 
   <p>
-    <span class="clausula">2.2.</span> Toda la información cartográfica, polígonos de
-    afectación, cronómetros de interrupción, índices de estabilidad energética, contadores
-    de reportes y notificaciones emitidas por el módulo asistente interno de la aplicación
-    revisten carácter meramente informativo, estadístico, referencial y probabilístico. En
-    ningún caso constituyen boletines oficiales, peritajes técnicos, diagnósticos
-    certificables ni recomendaciones profesionales vinculantes.
+    <span class="clause">3.2.</span> Toda la información cartográfica, polígonos de afectación,
+    cronómetros de interrupción, índices de estabilidad energética, contadores de reportes y
+    notificaciones emitidas por el módulo asistente interno de la aplicación revisten carácter
+    meramente informativo, estadístico, referencial y probabilístico. En ningún caso constituyen
+    boletines oficiales, peritajes técnicos, diagnósticos certificables ni recomendaciones
+    profesionales vinculantes.
   </p>
 
-  <h2>Cláusula Tercera — Inventario Exhaustivo de Categorías de Datos Tratados</h2>
-
-  <h3>3.1. Identificador Técnico Pseudoanonimizado</h3>
   <p>
-    Con ocasión de la primera ejecución del binario, se generará de manera local y
-    aleatoria un identificador alfanumérico universal versión 4 (<code>UUID v4</code>).
-    Dicho identificador <strong>no guardará relación alguna</strong> con nombre, apellido,
-    documento nacional de identidad, correo electrónico, número telefónico, tarjeta SIM,
-    IMSI, IMEI, dirección MAC ni cualquier otro atributo que permita la identificación
-    directa o indirecta del Licenciatario.
+    <span class="clause">3.3.</span> El Licenciatario reconoce y acepta que las estimaciones
+    de duración, magnitud y afectación territorial de los eventos eléctricos derivan exclusivamente
+    de agregaciones estadísticas de señales técnicas y reportes ciudadanos, y no de mediciones
+    instrumentales certificadas por entidad competente alguna.
   </p>
 
-  <h3>3.2. Datos de Localización Geográfica</h3>
+  <h2>Cláusula Cuarta — Categorías de Datos Tratados</h2>
+
+  <h3>4.1. Identificador Técnico Pseudoanonimizado</h3>
+  <p>
+    Con ocasión de la primera ejecución del binario, se generará de manera local y aleatoria
+    un identificador alfanumérico universal versión 4 (<code>UUID v4</code>). Dicho
+    identificador <strong>no guardará relación alguna</strong> con nombre, apellido, documento
+    nacional de identidad, correo electrónico, número telefónico, tarjeta SIM, IMSI, IMEI,
+    dirección MAC ni cualquier otro atributo que permita la identificación directa o indirecta
+    del Licenciatario.
+  </p>
+  <p>
+    El UUID v4 será empleado exclusivamente para: (i) prevenir la duplicación de reportes
+    desde un mismo Terminal en intervalos cortos; (ii) mantener la coherencia del estado del
+    nodo en el mapa comunitario; y (iii) aplicar mecanismos de ponderación de confianza
+    (<em>trust scoring</em>) conforme a la Cláusula Decimocuarta del presente Instrumento.
+  </p>
+
+  <h3>4.2. Datos de Localización Geográfica</h3>
   <p>
     Cuando el Licenciatario visualice el lienzo cartográfico, emita reportes manuales o
     autorice la telemetría colaborativa en segundo plano, la aplicación obtendrá las
-    coordenadas de latitud y longitud provistas por el proveedor fusionado de ubicación
-    del sistema operativo Android. Las finalidades específicas son:
+    coordenadas de latitud y longitud provistas por el proveedor fusionado de ubicación del
+    sistema operativo Android. Las finalidades específicas del tratamiento de datos de
+    localización son:
   </p>
   <ol>
     <li>Posicionar los reportes de fallas eléctricas dentro del polígono o sector urbano correspondiente;</li>
     <li>Desplegar en el lienzo cartográfico los cortes geográficamente próximos a la posición actual del Nodo;</li>
     <li>Correlacionar caídas repentinas de conectividad entre múltiples Nodos participantes para la detección automática de apagones;</li>
-    <li>Almacenar localmente las ubicaciones designadas por el Licenciatario bajo denominaciones tales como "Mi Hogar" o "Trabajo", en base de datos interna SQLite (Room) del dispositivo, sin transmisión al servidor salvo decisión expresa del Licenciatario.</li>
+    <li>Almacenar localmente las ubicaciones designadas por el Licenciatario bajo denominaciones tales como "Mi Hogar" o "Trabajo", en base de datos interna SQLite (Room) del dispositivo;</li>
+    <li>Enviar alertas específicas cuando un apagón sea detectado en proximidad de alguna ubicación guardada por el Licenciatario.</li>
   </ol>
 
-  <h3>3.3. Telemetría de Red y Estado Energético del Terminal</h3>
+  <h3>4.3. Telemetría de Red y Estado Energético del Terminal</h3>
+  <p>
+    La Plataforma recopila, con periodicidad configurable (por defecto, cada quince (15)
+    minutos), los siguientes datos técnicos:
+  </p>
   <ul>
     <li>Estado de vinculación a red inalámbrica (<code>conectado / desconectado</code>), sin registro de contraseñas, credenciales ni tráfico navegado;</li>
     <li>Tipo de transporte de red activo (<code>WiFi</code> frente a <code>Datos Móviles Celulares</code>) e intensidad general de señal en <code>dBm</code>;</li>
     <li>Estado de carga de batería (<code>cargando por corriente alterna AC</code> frente a <code>descargando en batería</code>) y porcentaje de carga;</li>
-    <li>Marca temporal en formato de tiempo universal coordinado (UTC).</li>
+    <li>Marca temporal en formato de tiempo universal coordinado (UTC);</li>
+    <li>Modelo y fabricante del dispositivo, con exclusiva finalidad de diagnóstico técnico y segmentación estadística agregada.</li>
   </ul>
 
-  <h2>Cláusula Cuarta — Categorías de Datos No Tratados (Exclusión Exhaustiva)</h2>
+  <h3>4.4. Datos Derivados de la Interacción con la Interfaz</h3>
+  <p>
+    La Plataforma podrá registrar —de manera agregada y sin vinculación a la identidad del
+    Licenciatario— métricas de uso de funcionalidades: cantidad de veces que se consulta el
+    mapa, número de reportes emitidos, cantidad de ubicaciones guardadas, frecuencia de
+    apertura de la aplicación y patrones horarios de uso general.
+  </p>
+
+  <h3>4.5. Datos de Diagnóstico y Errores</h3>
+  <p>
+    En caso de fallo técnico, la Plataforma podrá registrar información anónima de diagnóstico,
+    comprendiendo exclusivamente: versión del binario, versión del sistema operativo, modelo
+    del dispositivo, traza de excepción y marca temporal del error.
+  </p>
+
+  <h2>Cláusula Quinta — Categorías de Datos No Tratados</h2>
 
   <div class="warning">
     Se deja constancia expresa y verificable, tanto en el binario compilado como en la
@@ -294,60 +598,416 @@
     <li>Fotografías, videos, archivos multimedia, documentos almacenados en la memoria interna o externa del dispositivo;</li>
     <li>Capturas de audio o video mediante micrófono o cámara del dispositivo;</li>
     <li>Contenido de páginas web visitadas, historial de navegación, contraseñas, tokens de sesión ni tráfico de la red WiFi;</li>
-    <li>Datos biométricos, información de salud, opiniones políticas, creencias religiosas o cualquier categoría especial de datos.</li>
+    <li>Datos biométricos, información de salud, opiniones políticas, creencias religiosas, orientación sexual o cualquier categoría especial de datos;</li>
+    <li>Información financiera, cuentas bancarias, tarjetas de crédito, criptomonedas ni movimientos transaccionales;</li>
+    <li>Datos de geolocalización histórica más allá de los treinta (30) días inmediatamente anteriores;</li>
+    <li>Datos de menores de trece (13) años de edad, salvo consentimiento verificable de padre, madre o representante legal.</li>
   </ul>
 
-  <h2>Cláusula Quinta — Servicios de Terceros, Encargados del Tratamiento y Transferencias Internacionales</h2>
+  <h2>Cláusula Sexta — Bases Jurídicas del Tratamiento</h2>
 
-  <h3>5.1. Infraestructura en la Nube (Supabase Inc.)</h3>
   <p>
-    Los reportes y pulsos de telemetría —compuestos exclusivamente por el UUID
-    pseudoanonimizado, coordenadas, estado eléctrico y marca temporal— se transmiten
-    mediante canales cifrados extremo a extremo (HTTPS/TLS 1.2 o superior) hacia la
-    infraestructura de Supabase Inc., cuyo centro de datos para la región sudamericana
-    se encuentra ubicado en São Paulo, Brasil. Supabase actúa en calidad de
-    <em>encargado del tratamiento</em> (data processor) conforme a los términos de su
-    acuerdo de procesamiento de datos (DPA).
+    El tratamiento de datos personales efectuado por SinLuz se fundamenta en las siguientes
+    bases jurídicas, conforme a los estándares internacionales aplicables:
   </p>
 
-  <h3>5.2. Notificaciones Push (Firebase Cloud Messaging — Google LLC)</h3>
+  <h3>6.1. Consentimiento Exprés del Titular</h3>
   <p>
-    La Plataforma emplea el servicio Firebase Cloud Messaging, operado por Google LLC,
-    para la entrega de notificaciones relativas a apagones detectados en las zonas
-    monitoreadas por el Licenciatario. Google actúa en calidad de <em>subencargado del
-    tratamiento</em>, procesando exclusivamente el token de notificación del dispositivo
-    y el contenido textual de la notificación.
+    El Licenciatario otorga su consentimiento libre, previo, expreso e informado para el
+    tratamiento de los datos descritos en la Cláusula Cuarta, mediante la aceptación del
+    presente Instrumento al iniciar la aplicación. Dicho consentimiento podrá ser revocado
+    en cualquier momento conforme a lo previsto en la Cláusula Décima.
   </p>
 
-  <h3>5.3. Publicidad Programática (Google AdMob)</h3>
+  <h3>6.2. Ejecución de un Contrato</h3>
   <p>
-    En la modalidad gratuita se integra el SDK oficial de Google Mobile Ads (AdMob).
-    Previa obtención del consentimiento expreso del Licenciatario mediante el diálogo
-    normativo correspondiente, Google AdMob podrá emplear identificadores publicitarios
-    del dispositivo o señales contextuales para la mostración de anuncios relevantes
-    y la prevención de fraude publicitario. El Licenciatario podrá optar por anuncios
-    no personalizados o suprimir la totalidad de la publicidad mediante la activación
-    de la modalidad Pro.
+    Determinados tratamientos resultan necesarios para la ejecución del presente Contrato,
+    incluyendo la prestación efectiva de los servicios ofrecidos por la Plataforma, la
+    gestión de la cuenta del Licenciatario y la atención de consultas o solicitudes.
   </p>
 
-  <h2>Cláusula Sexta — Régimen de Datos Agregados y API Empresarial (Modelo B2B)</h2>
+  <h3>6.3. Interés Legítimo</h3>
+  <p>
+    La Plataforma podrá tratar datos personales con base en su interés legítimo en la
+    prevención de fraude, garantía de seguridad de la información, mejora de la calidad del
+    servicio y desarrollo de nuevas funcionalidades, siempre que dicho interés no prevalezca
+    sobre los derechos y libertades fundamentales del Titular.
+  </p>
 
-  <h3>6.1. Prohibición Absoluta de Comercialización de Datos Individuales</h3>
+  <h3>6.4. Cumplimiento de Obligación Legal</h3>
+  <p>
+    Cuando así resulte exigido por ley aplicable, la Plataforma tratará datos personales para
+    el cumplimiento de obligaciones legales, incluyendo —sin carácter limitativo— requerimientos
+    de autoridades judiciales o administrativas competentes.
+  </p>
+
+  <h3>6.5. Protección de Intereses Vitales</h3>
+  <p>
+    En situaciones de emergencia, la Plataforma podrá tratar datos personales para la
+    protección de intereses vitales del Titular o de terceros, en los términos permitidos por
+    la legislación aplicable.
+  </p>
+
+  <h2>Cláusula Séptima — Plazos de Retención y Ciclos de Vida del Dato</h2>
+
+  <p>
+    Los datos personales y pseudoanonimizados serán conservados únicamente durante el tiempo
+    necesario para el cumplimiento de las finalidades descritas en el presente Instrumento,
+    conforme a los plazos detallados en el Anexo C. De manera general:
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Categoría de Dato</th>
+        <th>Plazo de Retención</th>
+        <th>Base de Cálculo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Telemetría cruda (heartbeats)</td>
+        <td>90 días</td>
+        <td>Inicio del tratamiento</td>
+      </tr>
+      <tr>
+        <td>Reportes ciudadanos</td>
+        <td>180 días</td>
+        <td>Inicio del tratamiento</td>
+      </tr>
+      <tr>
+        <td>Eventos de apagón (registro base)</td>
+        <td>24 meses</td>
+        <td>Finalización del evento</td>
+      </tr>
+      <tr>
+        <td>Series históricas agregadas</td>
+        <td>Indefinido</td>
+        <td>Datos anonimizados irreversiblemente</td>
+      </tr>
+      <tr>
+        <td>Ubicaciones guardadas por el usuario</td>
+        <td>Hasta eliminación por el Titular</td>
+        <td>Acción explícita del Titular</td>
+      </tr>
+      <tr>
+        <td>Tokens de notificación push</td>
+        <td>180 días desde la última actividad</td>
+        <td>Última interacción</td>
+      </tr>
+      <tr>
+        <td>Identificador UUID v4 del nodo</td>
+        <td>Indefinido (o hasta eliminación por el Titular)</td>
+        <td>Persistencia del binario</td>
+      </tr>
+      <tr>
+        <td>Datos de diagnóstico y errores</td>
+        <td>30 días</td>
+        <td>Registro del evento</td>
+      </tr>
+      <tr>
+        <td>Registros de consentimiento</td>
+        <td>Duración del contrato + 5 años</td>
+        <td>Finalización contractual</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>
+    <span class="clause">7.1. Anonimización irreversible.</span> Una vez transcurridos los plazos
+    previstos para telemetría cruda y reportes ciudadanos, los datos serán sometidos a procesos
+    de agregación y generalización estadística, resultando en conjuntos de datos agregados que
+    podrán ser conservados de manera indefinida con fines estadísticos e históricos.
+  </p>
+
+  <p>
+    <span class="clause">7.2. Eliminación segura.</span> La eliminación de datos personales se
+    realizará mediante procedimientos técnicos que garanticen su irreversibilidad, conforme a
+    estándares reconocidos internacionalmente.
+  </p>
+
+  <h2>Cláusula Octava — Encargados, Subencargados y Transferencias Internacionales</h2>
+
+  <h3>8.1. Encargados del Tratamiento</h3>
+  <p>
+    La Plataforma podrá designar Encargados del Tratamiento para la ejecución de actividades
+    específicas, conforme al Anexo B. Todo Encargado estará sujeto a un Acuerdo de Procesamiento
+    de Datos (DPA) que garantice un nivel de protección equivalente al establecido en el presente
+    Instrumento.
+  </p>
+
+  <h3>8.2. Transferencias Internacionales</h3>
+  <p>
+    Determinados Encargados y Subencargados se encuentran establecidos en jurisdicciones distintas
+    a la del Responsable. La Plataforma garantiza que toda transferencia internacional se realizará
+    únicamente cuando exista: (i) decisión de adecuación emitida por autoridad competente; (ii)
+    garantías apropiadas, tales como cláusulas contractuales tipo; o (iii) consentimiento expreso
+    del Titular.
+  </p>
+
+  <h3>8.3. Limitaciones al Acceso Gubernamental</h3>
+  <p>
+    La Plataforma no divulgará datos personales a autoridades gubernamentales salvo cuando
+    medie requerimiento legal formal emitido por autoridad competente y notificado al Titular,
+    en los términos permitidos por la legislación aplicable. Cuando la ley prohíba notificar
+    al Titular, la Plataforma limitará la divulgación a lo estrictamente requerido.
+  </p>
+
+  <h2>Cláusula Novena — Medidas de Seguridad Técnicas y Organizativas</h2>
+
+  <p>
+    La Plataforma implementa medidas técnicas y organizativas apropiadas para garantizar un
+    nivel de seguridad adecuado al riesgo, incluyendo —sin carácter limitativo—:
+  </p>
+
+  <ul>
+    <li><strong>Cifrado en tránsito:</strong> toda comunicación con servidores se realiza mediante HTTPS/TLS 1.2 o superior;</li>
+    <li><strong>Cifrado en reposo:</strong> los datos almacenados en la infraestructura de Supabase se cifran conforme a los estándares AES-256;</li>
+    <li><strong>Control de acceso:</strong> políticas de Row Level Security (RLS) en la totalidad de las tablas;</li>
+    <li><strong>Autenticación multifactor:</strong> exigida para cuentas con privilegios administrativos;</li>
+    <li><strong>Registro de auditoría:</strong> logs de acceso y modificaciones conservados durante el plazo establecido en el Anexo C;</li>
+    <li><strong>Actualización periódica:</strong> revisión y aplicación de parches de seguridad conforme a las recomendaciones del fabricante;</li>
+    <li><strong>Principio de mínimo privilegio:</strong> los accesos son otorgados estrictamente conforme a las funciones requeridas.</li>
+  </ul>
+
+  <h3>9.1. Notificación de Violaciones de Seguridad</h3>
+  <p>
+    En caso de detectar una violación de seguridad que afecte datos personales, la Plataforma
+    notificará a la autoridad de control competente dentro de las setenta y dos (72) horas
+    siguientes a su conocimiento, y al Titular afectado sin dilación indebida cuando la
+    violación entrañe un alto riesgo para sus derechos y libertades.
+  </p>
+
+  <h2>Cláusula Décima — Derechos del Titular de los Datos</h2>
+
+  <p>
+    El Licenciatario, en su calidad de Titular de los Datos, podrá ejercer los siguientes
+    derechos, conforme a la legislación aplicable:
+  </p>
+
+  <h3>10.1. Derecho de Acceso</h3>
+  <p>
+    Obtener confirmación sobre si sus datos personales están siendo tratados y, en su caso,
+    acceder a los mismos, así como a la información relativa a las finalidades del tratamiento,
+    categorías de datos tratados, destinatarios y plazo previsto de conservación.
+  </p>
+
+  <h3>10.2. Derecho de Rectificación</h3>
+  <p>
+    Solicitar la corrección de datos personales inexactos o incompletos. En tanto los datos
+    tratados por la Plataforma son de naturaleza técnica y se generan automáticamente, la
+    rectificación se limitará a los casos en que sea técnicamente factible.
+  </p>
+
+  <h3>10.3. Derecho de Supresión (Derecho al Olvido)</h3>
+  <p>
+    Solicitar la eliminación de sus datos personales cuando concurra alguna de las circunstancias
+    previstas en la legislación aplicable. La Plataforma ejecutará dicha eliminación en el plazo
+    máximo de treinta (30) días hábiles, salvo obligación legal de conservación.
+  </p>
+
+  <h3>10.4. Derecho a la Limitación del Tratamiento</h3>
+  <p>
+    Solicitar la limitación del tratamiento de sus datos en los supuestos previstos por ley,
+    en cuyo caso la Plataforma los conservará únicamente para el ejercicio o la defensa de
+    reclamaciones.
+  </p>
+
+  <h3>10.5. Derecho a la Portabilidad</h3>
+  <p>
+    Recibir sus datos personales en un formato estructurado, de uso común y lectura mecánica,
+    o solicitar su transmisión a otro responsable, cuando técnicamente sea posible.
+  </p>
+
+  <h3>10.6. Derecho de Oposición</h3>
+  <p>
+    Oponerse al tratamiento de sus datos personales cuando concurran motivos relacionados con
+    su situación particular. La Plataforma cesará el tratamiento salvo que acredite motivos
+    legítimos imperiosos que prevalezcan sobre los intereses del Titular.
+  </p>
+
+  <h3>10.7. Derecho a Retirar el Consentimiento</h3>
+  <p>
+    Retirar en cualquier momento el consentimiento previamente otorgado, sin que ello afecte
+    a la licitud del tratamiento basado en el consentimiento previo a su retirada.
+  </p>
+
+  <h3>10.8. Derecho a Presentar Reclamación ante Autoridad de Control</h3>
+  <p>
+    Presentar reclamación ante la autoridad de control competente de su jurisdicción, sin
+    perjuicio de otros recursos administrativos o judiciales.
+  </p>
+
+  <p>
+    El ejercicio de los derechos mencionados podrá realizarse mediante solicitud dirigida a
+    <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a>, acompañada de
+    información que permita verificar la identidad del solicitante. La Plataforma responderá
+    en el plazo máximo de treinta (30) días hábiles.
+  </p>
+
+  <h2>Cláusula Undécima — Menores de Edad y Capacidad Legal</h2>
+
+  <p>
+    <span class="clause">11.1.</span> El uso de la Plataforma está reservado para personas
+    mayores de trece (13) años de edad. Los menores de dicha edad podrán utilizar la aplicación
+    únicamente bajo supervisión y con el consentimiento verificable de su padre, madre o
+    representante legal.
+  </p>
+
+  <p>
+    <span class="clause">11.2.</span> Si la Plataforma tiene conocimiento de que ha recolectado
+    datos personales de un menor de trece (13) años sin el consentimiento verificable requerido,
+    procederá a su eliminación en el plazo máximo de treinta (30) días hábiles.
+  </p>
+
+  <p>
+    <span class="clause">11.3.</span> El Licenciatario declara, bajo fe de juramento, contar
+    con la capacidad legal necesaria para celebrar el presente Contrato, conforme a la
+    legislación de su jurisdicción de residencia.
+  </p>
+
+  <h2>Cláusula Duodécima — Cookies, Identificadores y Tecnologías Similares</h2>
+
+  <p>
+    <span class="clause">12.1.</span> La Plataforma, en su modalidad de aplicación móvil, no
+    emplea cookies en el sentido estricto del término. No obstante, podrá emplear identificadores
+    técnicos análogos que cumplan finalidades equivalentes.
+  </p>
+
+  <p>
+    <span class="clause">12.2.</span> Los identificadores técnicos empleados por la Plataforma
+    son:
+  </p>
+  <ul>
+    <li><code>UUID v4</code>: identificador del nodo, generado localmente y almacenado en SharedPreferences del dispositivo;</li>
+    <li><code>FCM Token</code>: token de notificación push emitido por Firebase Cloud Messaging;</li>
+    <li><code>AdMob ID</code>: identificador publicitario del sistema operativo, empleado únicamente en la modalidad gratuita y previo consentimiento del Licenciatario.</li>
+  </ul>
+
+  <p>
+    <span class="clause">12.3.</span> El Licenciatario podrá gestionar los identificadores
+    publicitarios a través de la configuración de su sistema operativo Android
+    (Configuración → Google → Anuncios → Restablecer ID de publicidad o Eliminar ID de publicidad).
+  </p>
+
+  <h2>Cláusula Decimotercera — Toma de Decisiones Automatizadas y Perfilado</h2>
+
+  <p>
+    <span class="clause">13.1.</span> La Plataforma emplea algoritmos de clustering espacial
+    (DBSCAN) y funciones geoespaciales (PostGIS) para la detección automatizada de apagones.
+    Dichos algoritmos operan exclusivamente sobre datos técnicos y agregados, sin elaborar
+    perfiles personales del Licenciatario.
+  </p>
+
+  <p>
+    <span class="clause">13.2.</span> La Plataforma no adopta decisiones automatizadas que
+    produzcan efectos jurídicos significativos sobre el Titular, en el sentido establecido
+    por el artículo 22 del RGPD ni por normativa análoga.
+  </p>
+
+  <p>
+    <span class="clause">13.3.</span> El sistema de ponderación de confianza (<em>trust
+    scoring</em>) descrito en la Cláusula Decimocuarta no constituye perfilado personal,
+    sino evaluación técnica de la fiabilidad de las señales emitidas por un nodo anónimo.
+  </p>
+
+  <h2>Cláusula Decimocuarta — Régimen de Reportes Ciudadanos</h2>
+
+  <p>
+    <span class="clause">14.1. Principio de Buena Fe Cívica.</span> El funcionamiento del
+    Sistema descansa en la honestidad y precisión de la comunidad de Licenciatarios. Al
+    emitir un reporte manual, el Licenciatario declara bajo fe de juramento cívico que dicha
+    condición refleja el estado real del suministro eléctrico en su ubicación o sector
+    seleccionado.
+  </p>
+
+  <p>
+    <span class="clause">14.2. Filtros Anti-Abuso y Ponderación de Confianza (Trust Scoring).</span>
+    El Sistema incorpora mecanismos automatizados de validación cruzada —cooldown de envío
+    por nodo, verificación de proximidad radial mediante distancia haversine y contraste con
+    telemetría pasiva de nodos vecinos—. SinLuz se reserva el derecho unilateral de descartar,
+    atenuar el peso estadístico o bloquear silenciosamente (<em>shadowban</em>) las emisiones
+    provenientes de identificadores que presenten patrones anómalos, reiterativos o
+    incongruentes con las lecturas de la red vecinal.
+  </p>
+
+  <p>
+    <span class="clause">14.3. Caducidad Automática.</span> Todo reporte activo tendrá una
+    vigencia temporal predeterminada si no recibe confirmaciones adicionales o pulsos de
+    telemetría que corroboren la continuidad de la interrupción.
+  </p>
+
+  <h2>Cláusula Decimoquinta — Sistema de Confirmación por Votación Geográfica</h2>
+
+  <p>
+    <span class="clause">15.1.</span> La Plataforma podrá implementar mecanismos de consulta
+    interactiva a los Nodos geográficamente próximos al epicentro de un evento detectado, con
+    el fin de obtener confirmación colaborativa mediante votación binaria. Los resultados de
+    dicha votación se consolidarán estadísticamente y no constituirán, en ningún caso, prueba
+    fehaciente de la existencia o inexistencia de un corte eléctrico.
+  </p>
+
+  <p>
+    <span class="clause">15.2.</span> Las respuestas emitidas por los Nodos consultados no
+    serán asociadas a la identidad del Licenciatario en ningún caso, sino exclusivamente al
+    identificador UUID v4 del Terminal.
+  </p>
+
+  <p>
+    <span class="clause">15.3.</span> La Plataforma se reserva el derecho de limitar la
+    frecuencia de las consultas con el fin de prevenir el acoso notificatorio
+    (<em>notification fatigue</em>) y preservar la experiencia de uso.
+  </p>
+
+  <h2>Cláusula Decimosexta — Modalidades de Servicio</h2>
+
+  <h3>16.1. Modalidad Gratuita (Free)</h3>
+  <p>
+    El acceso básico —visualización cartográfica, emisión de reportes manuales, recepción de
+    alertas comunitarias, telemetría colaborativa— se ofrece sin contraprestación monetaria
+    directa, financiándose el mantenimiento de servidores mediante la inserción de espacios
+    publicitarios tipo banner provistos por la red Google AdMob.
+  </p>
+
+  <h3>16.2. Modalidad de Suscripción (Pro)</h3>
+  <p>
+    Los Licenciatarios que activen la modalidad Pro disfrutarán, sin carácter limitativo, de:
+    supresión integral de anuncios publicitarios; acceso y actualización en tiempo real del
+    Widget de pantalla de inicio; registro y vigilancia simultánea de hasta diez (10)
+    ubicaciones guardadas, frente a las tres (3) de la modalidad gratuita; y alertas con
+    mayor anticipación temporal.
+  </p>
+
+  <p>
+    El precio de referencia es de <strong>$1.99 USD mensuales</strong> o <strong>$14.99 USD
+    anuales</strong>, con prueba gratuita de siete (7) días. La gestión y cancelación se
+    realizarán exclusivamente a través de Google Play conforme a sus políticas.
+  </p>
+
+  <h3>16.3. Modalidad Empresarial (B2B API)</h3>
+  <p>
+    El acceso programático a los datos agregados descritos en la Cláusula Decimoséptima se
+    otorgará exclusivamente mediante contrato comercial específico.
+  </p>
+
+  <h2>Cláusula Decimoséptima — Régimen de Datos Agregados y API Empresarial</h2>
+
+  <h3>17.1. Prohibición Absoluta de Comercialización de Datos Individuales</h3>
   <p>
     SinLuz <strong>jamás vende, alquila, comercializa, cede, licencia ni transfiere</strong>
     bases de datos que contengan información individual de los Licenciatarios —
     identificadores pseudoanonimizados, coordenadas precisas, historial de ubicación o
-    telemetría personal— a corredores de datos (<em>data brokers</em>), agencias de
-    mercadeo, entidades públicas o privadas, ni a cualquier tercero ajeno a la operación
-    técnica de la Plataforma.
+    telemetría personal— a corredores de datos (<em>data brokers</em>), agencias de mercadeo,
+    entidades públicas o privadas, ni a cualquier tercero ajeno a la operación técnica de la
+    Plataforma.
   </p>
 
-  <h3>6.2. Oferta de Información Agregada Pseudoanonimizada</h3>
+  <h3>17.2. Oferta de Información Agregada Pseudoanonimizada</h3>
   <p>
-    SinLuz podrá ofrecer acceso programático mediante Interfaz de Programación de
-    Aplicaciones (API) a empresas, comercios, medios de comunicación, entidades
-    académicas e instituciones, la cual <strong>entregará exclusivamente datos agregados
-    y pseudoanonimizados</strong>, conforme al siguiente inventario no taxativo:
+    SinLuz podrá ofrecer acceso programático mediante Interfaz de Programación de Aplicaciones
+    (API) a empresas, comercios, medios de comunicación, entidades académicas e instituciones,
+    la cual <strong>entregará exclusivamente datos agregados y pseudoanonimizados</strong>,
+    conforme al siguiente inventario no taxativo:
   </p>
   <ul>
     <li>Cantidad total de zonas con apagón activo en un instante determinado;</li>
@@ -357,76 +1017,66 @@
     <li>Índices agregados de estabilidad eléctrica por circuito o sector.</li>
   </ul>
 
-  <h3>6.3. Garantías Técnicas de No Re-identificación</h3>
+  <h3>17.3. Garantías Técnicas de No Re-identificación</h3>
   <p>
-    Todo dato entregado a través de la API Empresarial habrá sido previamente sometido
-    a procesos de agregación estadística, generalización espacial y aplicación de
-    técnicas de <em>k-anonimato</em> con valor <code>k ≥ 5</code>. Ningún conjunto de
-    datos podrá permitir la identificación directa o indirecta, total o parcial, de
-    persona natural alguna. El acceso a la API se otorgará únicamente bajo contrato
-    comercial específico que prohibirá expresamente cualquier intento de
-    re-identificación, desagregación, reventa, cesión o cruce con otras bases de datos.
+    Todo dato entregado a través de la API Empresarial habrá sido previamente sometido a
+    procesos de agregación estadística, generalización espacial y aplicación de técnicas de
+    <em>k-anonimato</em> con valor <code>k ≥ 5</code>. Ningún conjunto de datos podrá permitir
+    la identificación directa o indirecta, total o parcial, de persona natural alguna.
   </p>
 
-  <h2>Cláusula Séptima — Régimen de Reportes Ciudadanos y Veracidad Colaborativa</h2>
+  <h3>17.4. Contrato Comercial Obligatorio</h3>
+  <p>
+    El acceso a la API Empresarial se otorgará únicamente bajo contrato comercial específico
+    que prohibirá expresamente cualquier intento de re-identificación, desagregación, reventa,
+    cesión o cruce con otras bases de datos.
+  </p>
+
+  <h2>Cláusula Decimoctava — Uso Aceptable y Conducta Prohibida</h2>
 
   <p>
-    <span class="clausula">7.1. Principio de Buena Fe Cívica.</span> El funcionamiento del
-    Sistema descansa en la honestidad y precisión de la comunidad de Licenciatarios. Al
-    emitir un reporte manual, el Licenciatario declara bajo fe de juramento cívico que
-    dicha condición refleja el estado real del suministro eléctrico en su ubicación o
-    sector seleccionado.
+    Queda terminantemente prohibido al Licenciatario, de forma directa o por interpuesta
+    persona:
+  </p>
+
+  <ol>
+    <li>Descompilar, desensamblar, aplicar ingeniería inversa, extraer código fuente, modificar archivos DEX/APK o intentar derivar los algoritmos de correlación heurística de telemetría de SinLuz;</li>
+    <li>Utilizar emuladores automatizados, granjas de dispositivos, scripts de inyección de coordenadas falsas (<em>GPS spoofing</em> o <em>mock locations</em> maliciosos) o bots con el propósito de alterar artificialmente el estado de los polígonos de servicio eléctrico o generar falsas alarmas colectivas;</li>
+    <li>Interceptar, alterar, saturar o realizar ataques de denegación de servicio (DoS/DDoS) contra los endpoints de sincronización en la nube utilizados por la Plataforma;</li>
+    <li>Explotar comercialmente, revender, redistribuir o publicar capturas automatizadas de la base de datos en tiempo real de SinLuz sin autorización previa y por escrito;</li>
+    <li>Introducir en los campos de texto o comentarios de reportes expresiones difamatorias, datos personales de terceros, incitación al odio, pánico financiero o contenido ilícito;</li>
+    <li>Suplantar la identidad de otra persona natural o jurídica;</li>
+    <li>Utilizar la Plataforma para fines distintos de los expresamente previstos en el presente Instrumento.</li>
+  </ol>
+
+  <p>
+    El incumplimiento de las prohibiciones establecidas en la presente Cláusula facultará a
+    SinLuz para suspender o terminar de manera inmediata el acceso del Licenciatario, sin
+    perjuicio de las acciones legales que pudieran corresponder.
+  </p>
+
+  <h2>Cláusula Decimonovena — Propiedad Intelectual</h2>
+
+  <p>
+    <span class="clause">19.1.</span> Todos los derechos de propiedad intelectual sobre el
+    diseño de interfaz, arquitectura de código, logotipos, iconografía adaptativa, animaciones
+    vectoriales y estructura de base de datos pertenecen exclusivamente a sus creadores.
   </p>
 
   <p>
-    <span class="clausula">7.2. Filtros Anti-Abuso y Ponderación de Confianza (Trust Scoring).</span>
-    El Sistema incorpora mecanismos automatizados de validación cruzada —cooldown de envío
-    por nodo, verificación de proximidad radial mediante distancia haversine y contraste
-    con telemetría pasiva de nodos vecinos—. SinLuz se reserva el derecho unilateral de
-    descartar, atenuar el peso estadístico o bloquear silenciosamente (<em>shadowban</em>)
-    las emisiones provenientes de identificadores que presenten patrones anómalos,
-    reiterativos o incongruentes con las lecturas de la red vecinal.
+    <span class="clause">19.2.</span> Los datos de mapas base y nomenclatura vial son provistos
+    por colaboradores de <strong>OpenStreetMap</strong> (© OpenStreetMap contributors) bajo
+    licencia ODbL, y las librerías de renderizado <strong>Leaflet</strong> bajo licencia
+    BSD-2-Clause.
   </p>
 
   <p>
-    <span class="clausula">7.3. Sistema de Confirmación Distribuida por Votación Geográfica.</span>
-    La Plataforma podrá implementar mecanismos de consulta interactiva a los Nodos
-    geográficamente próximos al epicentro de un evento detectado, con el fin de obtener
-    confirmación colaborativa mediante votación binaria. Los resultados de dicha
-    votación se consolidarán estadísticamente y no constituirán, en ningún caso, prueba
-    fehaciente de la existencia o inexistencia de un corte eléctrico.
+    <span class="clause">19.3.</span> El Licenciatario no adquiere derecho alguno de propiedad
+    intelectual sobre la Plataforma, limitándose su derecho al uso personal, no exclusivo,
+    intransferible y revocable conforme a los términos del presente Instrumento.
   </p>
 
-  <h2>Cláusula Octava — Modalidades de Servicio: Gratuita, Pro y Empresarial</h2>
-
-  <h3>8.1. Modalidad Gratuita (Free)</h3>
-  <p>
-    El acceso básico —visualización cartográfica, emisión de reportes manuales, recepción
-    de alertas comunitarias, telemetría colaborativa— se ofrece sin contraprestación
-    monetaria directa, financiándose el mantenimiento de servidores mediante la inserción
-    de espacios publicitarios tipo banner provistos por la red Google AdMob.
-  </p>
-
-  <h3>8.2. Modalidad de Suscripción (Pro)</h3>
-  <p>
-    Los Licenciatarios que activen la modalidad Pro disfrutarán, sin carácter limitativo,
-    de: supresión integral de anuncios publicitarios; acceso y actualización en tiempo
-    real del Widget de pantalla de inicio; registro y vigilancia simultánea de hasta diez
-    (10) ubicaciones guardadas, frente a las tres (3) de la modalidad gratuita; y alertas
-    con mayor anticipación temporal. El precio de referencia es de <strong>$1.99 USD
-    mensuales</strong> o <strong>$14.99 USD anuales</strong>, con prueba gratuita de
-    siete (7) días. La gestión y cancelación se realizarán exclusivamente a través de
-    Google Play conforme a sus políticas.
-  </p>
-
-  <h3>8.3. Modalidad Empresarial (B2B API)</h3>
-  <p>
-    El acceso programático a los datos agregados descritos en la Cláusula Sexta se
-    otorgará exclusivamente mediante contrato comercial específico, sujeto a las
-    garantías técnicas de no re-identificación establecidas en la subcláusula 6.3.
-  </p>
-
-  <h2>Cláusula Novena — Exención Absoluta de Garantías y Limitación de Responsabilidad Civil</h2>
+  <h2>Cláusula Vigésima — Exención de Garantías</h2>
 
   <div class="warning">
     <strong>EL SOFTWARE SINLUZ Y TODOS SUS DATOS ASOCIADOS SE PROPORCIONAN "TAL CUAL"
@@ -437,92 +1087,362 @@
   </div>
 
   <p>
-    <span class="clausula">9.1.</span> En ningún caso los desarrolladores, creadores,
+    <span class="clause">20.1.</span> SinLuz no garantiza la disponibilidad ininterrumpida
+    del servicio, la exactitud de las estimaciones o la ausencia de errores técnicos.
+  </p>
+
+  <p>
+    <span class="clause">20.2.</span> El Licenciatario reconoce que la Plataforma opera en
+    un entorno tecnológico sujeto a fallos, ataques informáticos, cortes de servicio y
+    demás riesgos inherentes, sin que ello genere responsabilidad alguna para SinLuz.
+  </p>
+
+  <h2>Cláusula Vigesimoprimera — Limitación de Responsabilidad</h2>
+
+  <p>
+    <span class="clause">21.1.</span> En ningún caso los desarrolladores, creadores,
     colaboradores o proveedores de infraestructura serán responsables ante el Licenciatario
     ni ante terceros por daños directos, indirectos, incidentales, especiales, emergentes,
-    punitivos o lucro cesante —incluyendo, a título enunciativo pero no limitativo: quema
-    o avería de electrodomésticos, equipos de refrigeración, computadoras o maquinaria
-    industrial por fluctuaciones de voltaje; pérdida de alimentos o insumos; interrupción
-    de actividades comerciales; o decisiones de traslado físico tomadas con base en el
-    mapa de la aplicación—, aun cuando se haya advertido de la posibilidad de tales daños.
+    punitivos o lucro cesante —incluyendo, a título enunciativo pero no limitativo: quema o
+    avería de electrodomésticos, equipos de refrigeración, computadoras o maquinaria
+    industrial por fluctuaciones de voltaje; pérdida de alimentos o insumos; interrupción de
+    actividades comerciales; o decisiones de traslado físico tomadas con base en el mapa de
+    la aplicación—, aun cuando se haya advertido de la posibilidad de tales daños.
   </p>
 
   <p>
-    <span class="clausula">9.2. Recomendación de Protección Eléctrica Física.</span> El
-    Licenciatario reconoce que ninguna aplicación móvil sustituye el uso de protectores
-    de voltaje físicos, reguladores, sistemas de alimentación ininterrumpida (UPS) o
-    plantas eléctricas de emergencia, siendo responsabilidad exclusiva del Licenciatario
-    desconectar sus equipos sensibles ante fluctuaciones del fluido eléctrico.
-  </p>
-
-  <h2>Cláusula Décima — Uso de Recursos del Dispositivo, Batería y Datos Móviles</h2>
-
-  <p>
-    <span class="clausula">10.1. Optimización Energética.</span> SinLuz ha sido diseñada
-    bajo arquitecturas reactivas orientadas a eventos del sistema Android
-    (<code>BroadcastReceivers</code>, <code>WorkManager</code> con intervalos espaciados)
-    para minimizar el impacto sobre la batería del dispositivo justamente durante
-    situaciones de apagón. No obstante, el uso prolongado de la pantalla encendida o la
-    descarga inicial de teselas del mapa para caché offline consumirá energía y tráfico
-    de datos del operador móvil o red WiFi del Licenciatario.
+    <span class="clause">21.2. Recomendación de Protección Eléctrica Física.</span> El
+    Licenciatario reconoce que ninguna aplicación móvil sustituye el uso de protectores de
+    voltaje físicos, reguladores, sistemas de alimentación ininterrumpida (UPS) o plantas
+    eléctricas de emergencia, siendo responsabilidad exclusiva del Licenciatario desconectar
+    sus equipos sensibles ante fluctuaciones del fluido eléctrico.
   </p>
 
   <p>
-    <span class="clausula">10.2. Permisos en Segundo Plano.</span> Cuando el Licenciatario
-    autorice explícitamente la ubicación en segundo plano ("Permitir todo el tiempo"),
-    dicha facultad se empleará única y exclusivamente para asociar coordenadas geográficas
-    al momento exacto en que los sensores del dispositivo detecten una desconexión
-    eléctrica o de red colectiva, permitiendo el trazado de polígonos sin requerir
-    intervención manual del Licenciatario.
+    <span class="clause">21.3.</span> En los casos en que la legislación aplicable no permita
+    la limitación total de responsabilidad, esta se limitará al monto máximo permitido por
+    ley, que en ningún caso excederá el equivalente a doce (12) mensualidades de la
+    suscripción Pro vigente al momento del evento dañoso.
   </p>
 
-  <h2>Cláusula Undécima — Propiedad Intelectual y Atribución de Terceros</h2>
+  <h2>Cláusula Vigesimosegunda — Indemnización por el Usuario</h2>
 
   <p>
-    <span class="clausula">11.1.</span> Todos los derechos de propiedad intelectual sobre
-    el diseño de interfaz, arquitectura de código, logotipos, iconografía adaptativa,
-    animaciones vectoriales y estructura de base de datos pertenecen exclusivamente a sus
-    creadores.
+    El Licenciatario se obliga a indemnizar y mantener indemne a SinLuz, sus creadores,
+    colaboradores y proveedores de infraestructura, frente a cualquier reclamación, demanda,
+    acción legal, daño, pérdida, responsabilidad, costo o gasto (incluyendo honorarios
+    razonables de abogados) que se derive de: (i) el uso indebido de la Plataforma por parte
+    del Licenciatario; (ii) el incumplimiento de los términos del presente Instrumento; o
+    (iii) la violación de derechos de terceros.
   </p>
 
-  <p>
-    <span class="clausula">11.2.</span> Los datos de mapas base y nomenclatura vial son
-    provistos por colaboradores de <strong>OpenStreetMap</strong> (© OpenStreetMap
-    contributors) bajo licencia ODbL, y las librerías de renderizado
-    <strong>Leaflet</strong> bajo licencia BSD-2-Clause.
-  </p>
-
-  <h2>Cláusula Duodécima — Modificaciones, Vigencia, Divisibilidad y Legislación Aplicable</h2>
+  <h2>Cláusula Vigesimotercera — Modificaciones, Vigencia y Divisibilidad</h2>
 
   <p>
-    <span class="clausula">12.1. Actualizaciones Normativas.</span> SinLuz podrá modificar
-    o actualizar el presente instrumento en cualquier momento, bastando para ello la
-    publicación de la nueva revisión dentro de esta misma sección legal.
+    <span class="clause">23.1. Actualizaciones Normativas.</span> SinLuz podrá modificar o
+    actualizar el presente instrumento en cualquier momento, bastando para ello la publicación
+    de la nueva revisión dentro de esta misma sección legal.
   </p>
 
   <p>
-    <span class="clausula">12.2. Divisibilidad (Severability).</span> Si cualquier
-    disposición del presente instrumento fuese declarada nula o inaplicable por autoridad
-    competente, las restantes cláusulas conservarán plena validez y eficacia jurídica.
+    <span class="clause">23.2. Notificación de Cambios Materiales.</span> Cuando las
+    modificaciones revistan carácter material, la Plataforma notificará al Licenciatario
+    mediante notificación push o aviso destacado dentro de la aplicación, con una antelación
+    mínima de quince (15) días naturales respecto a su entrada en vigor.
   </p>
 
   <p>
-    <span class="clausula">12.3. Contacto Oficial.</span> Para notificaciones legales,
-    soporte técnico o solicitudes vinculadas con este acuerdo, el Licenciatario podrá
-    dirigirse al correo electrónico:
-    <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a>
+    <span class="clause">23.3. Divisibilidad (Severability).</span> Si cualquier disposición
+    del presente instrumento fuese declarada nula o inaplicable por autoridad competente,
+    las restantes cláusulas conservarán plena validez y eficacia jurídica.
   </p>
 
-  <h2>Cláusula Decimotercera — Consentimiento Informado</h2>
   <p>
-    La utilización continuada de la aplicación SinLuz, tras la lectura del presente
-    instrumento normativo, constituye manifestación inequívoca de consentimiento libre,
-    previo, expreso e informado a la totalidad de los términos aquí estipulados.
+    <span class="clause">23.4. No Renuncia.</span> La falta de ejercicio por parte de SinLuz
+    de cualquier derecho previsto en el presente Instrumento no constituirá renuncia al mismo.
   </p>
+
+  <p>
+    <span class="clause">23.5. Acuerdo Íntegro.</span> El presente Instrumento, junto con sus
+    Anexos, constituye el acuerdo íntegro entre las partes respecto al objeto aquí previsto,
+    sustituyendo cualquier acuerdo previo.
+  </p>
+
+  <h2>Cláusula Vigesimocuarta — Resolución de Conflictos y Legislación Aplicable</h2>
+
+  <p>
+    <span class="clause">24.1. Legislación Aplicable.</span> El presente Instrumento se regirá
+    por la legislación de la República Bolivariana de Venezuela, sin perjuicio de las garantías
+    adicionales reconocidas a Titulares residentes en otras jurisdicciones conforme al Anexo D.
+  </p>
+
+  <p>
+    <span class="clause">24.2. Resolución Amistosa.</span> Las partes procurarán resolver
+    amistosamente cualquier controversia derivada del presente Instrumento, mediante
+    comunicación dirigida a <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a>.
+  </p>
+
+  <p>
+    <span class="clause">24.3. Jurisdicción.</span> En caso de no alcanzarse solución amistosa
+    en un plazo de sesenta (60) días, las controversias se someterán a la jurisdicción de los
+    tribunales competentes de la República Bolivariana de Venezuela.
+  </p>
+
+  <h2>Cláusula Vigesimoquinta — Contacto Oficial</h2>
+
+  <p>
+    Para notificaciones legales, soporte técnico, ejercicio de derechos o solicitudes
+    vinculadas con el presente Instrumento, el Licenciatario podrá dirigirse al correo
+    electrónico:
+  </p>
+
+  <p style="text-align:center; font-size:16px; margin:24px 0;">
+    <a href="mailto:sinluz.soporte@proton.me" style="font-size:16px;">sinluz.soporte@proton.me</a>
+  </p>
+
+  <p>
+    Las comunicaciones serán atendidas en el plazo máximo de treinta (30) días hábiles
+    contados a partir de su recepción.
+  </p>
+
+  <h2>Anexo A — Inventario Detallado de Categorías de Datos</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Categoría</th>
+        <th>Naturaleza</th>
+        <th>Finalidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A-01</td>
+        <td>UUID v4 del nodo</td>
+        <td>Pseudoanonimizado</td>
+        <td>Identificación técnica del Terminal Participante</td>
+      </tr>
+      <tr>
+        <td>A-02</td>
+        <td>Coordenadas geográficas (lat/lng)</td>
+        <td>Personal</td>
+        <td>Posicionamiento de reportes y detección de apagones</td>
+      </tr>
+      <tr>
+        <td>A-03</td>
+        <td>Estado de conectividad WiFi</td>
+        <td>Técnico</td>
+        <td>Detección de caídas de servicio</td>
+      </tr>
+      <tr>
+        <td>A-04</td>
+        <td>Tipo de red activa</td>
+        <td>Técnico</td>
+        <td>Análisis de degradación</td>
+      </tr>
+      <tr>
+        <td>A-05</td>
+        <td>Intensidad de señal (dBm)</td>
+        <td>Técnico</td>
+        <td>Correlación de caídas celulares</td>
+      </tr>
+      <tr>
+        <td>A-06</td>
+        <td>Estado de carga de batería</td>
+        <td>Técnico</td>
+        <td>Desambiguación de apagón vs. batería agotada</td>
+      </tr>
+      <tr>
+        <td>A-07</td>
+        <td>Nivel de batería (%)</td>
+        <td>Técnico</td>
+        <td>Diagnóstico secundario</td>
+      </tr>
+      <tr>
+        <td>A-08</td>
+        <td>Marca temporal UTC</td>
+        <td>Técnico</td>
+        <td>Construcción de series temporales</td>
+      </tr>
+      <tr>
+        <td>A-09</td>
+        <td>Modelo y fabricante del dispositivo</td>
+        <td>Técnico</td>
+        <td>Diagnóstico y segmentación estadística</td>
+      </tr>
+      <tr>
+        <td>A-10</td>
+        <td>Token FCM</td>
+        <td>Pseudoanonimizado</td>
+        <td>Entrega de notificaciones</td>
+      </tr>
+      <tr>
+        <td>A-11</td>
+        <td>Reportes ciudadanos manuales</td>
+        <td>Personal</td>
+        <td>Corroboración colaborativa</td>
+      </tr>
+      <tr>
+        <td>A-12</td>
+        <td>Ubicaciones guardadas por el usuario</td>
+        <td>Personal</td>
+        <td>Monitoreo de puntos de interés</td>
+      </tr>
+      <tr>
+        <td>A-13</td>
+        <td>Registros de consentimiento</td>
+        <td>Personal</td>
+        <td>Auditoría y cumplimiento legal</td>
+      </tr>
+      <tr>
+        <td>A-14</td>
+        <td>Datos de diagnóstico y errores</td>
+        <td>Técnico</td>
+        <td>Mejora del servicio</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Anexo B — Lista de Subencargados del Tratamiento</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Subencargado</th>
+        <th>País</th>
+        <th>Servicio</th>
+        <th>Datos Tratados</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Supabase Inc.</td>
+        <td>Estados Unidos / Brasil (São Paulo)</td>
+        <td>Base de datos en la nube</td>
+        <td>Categorías A-01 a A-14</td>
+      </tr>
+      <tr>
+        <td>Google LLC (Firebase Cloud Messaging)</td>
+        <td>Estados Unidos</td>
+        <td>Notificaciones push</td>
+        <td>Categoría A-10</td>
+      </tr>
+      <tr>
+        <td>Google LLC (AdMob)</td>
+        <td>Estados Unidos</td>
+        <td>Publicidad programática (solo modalidad Free)</td>
+        <td>Identificadores publicitarios del dispositivo</td>
+      </tr>
+      <tr>
+        <td>GitHub Inc.</td>
+        <td>Estados Unidos</td>
+        <td>Alojamiento de la política de privacidad</td>
+        <td>Ninguno (solo contenido estático)</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Anexo C — Tabla de Plazos de Retención</h2>
+
+  <p>
+    Los plazos aquí detallados se computan conforme a lo establecido en la Cláusula Séptima
+    del presente Instrumento:
+  </p>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Categoría</th>
+        <th>Plazo</th>
+        <th>Evento de inicio</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Telemetría cruda</td><td>90 días</td><td>Registro del heartbeat</td></tr>
+      <tr><td>Reportes ciudadanos</td><td>180 días</td><td>Emisión del reporte</td></tr>
+      <tr><td>Eventos de apagón (registro base)</td><td>24 meses</td><td>Finalización del evento</td></tr>
+      <tr><td>Snapshots de conectividad</td><td>90 días</td><td>Generación del snapshot</td></tr>
+      <tr><td>Ubicaciones guardadas</td><td>Indefinido</td><td>Eliminación por el Titular</td></tr>
+      <tr><td>Tokens FCM inactivos</td><td>180 días</td><td>Última actividad</td></tr>
+      <tr><td>Datos de diagnóstico</td><td>30 días</td><td>Registro del error</td></tr>
+      <tr><td>Registros de consentimiento</td><td>Duración del contrato + 5 años</td><td>Finalización contractual</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Anexo D — Matriz de Bases Legales por Jurisdicción</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Jurisdicción</th>
+        <th>Norma de Referencia</th>
+        <th>Base legal prioritaria</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Venezuela</td>
+        <td>Ley Especial contra los Delitos Informáticos; CRBV</td>
+        <td>Consentimiento + Interés legítimo</td>
+      </tr>
+      <tr>
+        <td>Brasil</td>
+        <td>LGPD (Lei 13.709/2018)</td>
+        <td>Consentimiento + Legítimo interesse</td>
+      </tr>
+      <tr>
+        <td>Unión Europea</td>
+        <td>RGPD (UE 2016/679)</td>
+        <td>Consentimiento + Interés legítimo + Contrato</td>
+      </tr>
+      <tr>
+        <td>Estados Unidos</td>
+        <td>CCPA / CPRA (California)</td>
+        <td>Consentimiento + Interés comercial legítimo</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Anexo E — Registro de Versiones del Instrumento</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Versión</th>
+        <th>Fecha</th>
+        <th>Cambios principales</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Rev. 1.0-ES</td>
+        <td>Septiembre 2026</td>
+        <td>Vigencia inicial del instrumento</td>
+      </tr>
+      <tr>
+        <td>Rev. 4.8-ES</td>
+        <td>Septiembre 2026</td>
+        <td>Adaptación a requisitos de Google Play Developer Program</td>
+      </tr>
+      <tr>
+        <td>Rev. 5.1-ES</td>
+        <td>Octubre 2026</td>
+        <td>Incorporación del modelo B2B y clarificación de datos agregados</td>
+      </tr>
+      <tr>
+        <td>Rev. 7.2-ES</td>
+        <td>Octubre 2026</td>
+        <td>Reestructuración integral en 25 cláusulas + 5 anexos; adopción de estándares RGPD y LGPD como referencias interpretativas</td>
+      </tr>
+    </tbody>
+  </table>
 
   <footer>
-    © 2026 SinLuz · Instrumento Normativo Rev. 5.1-ES · Plataforma colaborativa ciudadana independiente<br>
-    Documento sujeto a actualizaciones periódicas · Este texto no constituye asesoría jurídica profesional
+    © 2026 SinLuz · Instrumento Normativo Integral Rev. 7.2-ES<br>
+    Plataforma colaborativa ciudadana independiente · Documento sujeto a actualizaciones periódicas<br>
+    Este texto no constituye asesoría jurídica profesional · La versión auténtica es la publicada en esta URL oficial<br>
+    Última actualización: 3 de octubre de 2026
   </footer>
 
 </div>
