@@ -212,15 +212,15 @@
   <header>
     <h1>INSTRUMENTO NORMATIVO INTEGRAL DE PRIVACIDAD, TRATAMIENTO DE DATOS PSEUDOANONIMIZADOS, CONDICIONES GENERALES DE USO Y RÉGIMEN DE RESPONSABILIDAD DE LA PLATAFORMA TECNOLÓGICA SINLUZ</h1>
     <div class="subtitle">
-      Revisión Normativa Rev. 7.2-ES · Conforme al Programa de Desarrolladores de Google Play<br>
+      Revisión Normativa Rev. 7.3-ES · Conforme al Programa de Desarrolladores de Google Play<br>
       Alineado con los principios del Reglamento General de Protección de Datos (RGPD/UE 2016/679)<br>
       Adoptado conforme a la Ley Especial contra los Delitos Informáticos (Venezuela) y normativa aplicable
     </div>
   </header>
 
   <div class="doc-meta">
-    <strong>Fecha de entrada en vigor:</strong> 3 de octubre de 2026<br>
-    <strong>Última revisión normativa:</strong> Rev. 7.2-ES<br>
+    <strong>Fecha de entrada en vigor:</strong> 20 de octubre de 2026<br>
+    <strong>Última revisión normativa:</strong> Rev. 7.3-ES<br>
     <strong>Jurisdicción primaria de referencia:</strong> República Bolivariana de Venezuela<br>
     <strong>Jurisdicciones secundarias reconocidas:</strong> Brasil (LGPD), Unión Europea (RGPD) y Estados Unidos (CCPA/CPRA) respecto a usuarios residentes en dichos territorios<br>
     <strong>Canal oficial de notificaciones legales:</strong> <a href="mailto:sinluz.soporte@proton.me">sinluz.soporte@proton.me</a><br>
@@ -242,7 +242,7 @@
       <li>Cláusula Novena — Medidas de Seguridad Técnicas y Organizativas</li>
       <li>Cláusula Décima — Derechos del Titular de los Datos</li>
       <li>Cláusula Undécima — Menores de Edad y Capacidad Legal</li>
-      <li>Cláusula Duodécima — Cookies, Identificadores y Tecnologías Similares</li>
+      <li>Cláusula Duodécima — Permisos Sensibles del Sistema Operativo y Cookies</li>
       <li>Cláusula Decimotercera — Toma de Decisiones Automatizadas y Perfilado</li>
       <li>Cláusula Decimocuarta — Régimen de Reportes Ciudadanos</li>
       <li>Cláusula Decimoquinta — Sistema de Confirmación por Votación Geográfica</li>
@@ -323,7 +323,8 @@
       Dispositivo móvil con sistema operativo Android en el cual el Licenciatario ha instalado
       voluntariamente el binario de SinLuz y ha otorgado los permisos operativos correspondientes,
       incluyendo —sin carácter limitativo— los permisos de acceso a la ubicación precisa y
-      aproximada, estado de conectividad de red, y recepción de notificaciones push.
+      aproximada, estado de conectividad de red, actividad física (podómetro) y recepción de
+      notificaciones push.
     </p>
 
     <h4>1.2. Telemetría Pasiva No Intrusiva</h4>
@@ -345,21 +346,30 @@
       durante una ventana temporal acotada.
     </p>
 
-    <h4>1.4. Polígono Dinámico de Afectación</h4>
+    <h4>1.4. Sensor de Actividad Física (Podómetro)</h4>
+    <p>
+      Componente de hardware del dispositivo Android que registra el conteo de pasos del usuario.
+      SinLuz emplea este sensor de forma estrictamente pasiva y local (permiso <code>ACTIVITY_RECOGNITION</code>),
+      con la única finalidad de desambiguar falsos positivos. Si el usuario camina y se aleja
+      del router, el sistema asume movimiento y cancela la alerta; si está estático y la señal
+      cae de golpe, el sistema infiere un apagón.
+    </p>
+
+    <h4>1.5. Polígono Dinámico de Afectación</h4>
     <p>
       Representación geométrica vectorial renderizada sobre el lienzo cartográfico de SinLuz
       que delimita de forma aproximada el sector urbano, cuadrante, circuito o urbanización
       donde convergen reportes manuales o eventos de telemetría verificados.
     </p>
 
-    <h4>1.5. Bloque de Afectación Eléctrica</h4>
+    <h4>1.6. Bloque de Afectación Eléctrica</h4>
     <p>
       Unidad lógica-temporal que agrupa uno o más eventos de apagón iniciados dentro de una
       ventana temporal configurable (por defecto, veinte (20) minutos), permitiendo la
       reconstrucción del comportamiento agregado de la red de distribución eléctrica.
     </p>
 
-    <h4>1.6. Datos Pseudoanonimizados</h4>
+    <h4>1.7. Datos Pseudoanonimizados</h4>
     <p>
       Aquellos datos personales que, habiendo sido sometidos a un proceso de
       pseudoanonimización mediante el cual la información ya no puede atribuirse a un titular
@@ -368,7 +378,7 @@
       y sujeta a medidas técnicas y organizativas específicas.
     </p>
 
-    <h4>1.7. Datos Agregados</h4>
+    <h4>1.8. Datos Agregados</h4>
     <p>
       Conjunto de información que, habiendo sido sometida a procesos de agregación estadística,
       generalización y aplicación de técnicas de <em>k-anonimato</em> (con valor mínimo
@@ -376,55 +386,55 @@
       determinable, perdiendo la naturaleza jurídica de dato personal.
     </p>
 
-    <h4>1.8. Titular del Dato</h4>
+    <h4>1.9. Titular del Dato</h4>
     <p>
       Persona natural cuyos datos personales son objeto de tratamiento. Para los efectos del
       presente Instrumento, el Titular del Dato coincide con el Licenciatario.
     </p>
 
-    <h4>1.9. Responsable del Tratamiento</h4>
+    <h4>1.10. Responsable del Tratamiento</h4>
     <p>
       Persona natural o jurídica que decide sobre las finalidades y los medios del tratamiento
       de datos personales. Para los efectos del presente Instrumento, el Responsable del
       Tratamiento es el operador técnico independiente de la Plataforma SinLuz.
     </p>
 
-    <h4>1.10. Encargado del Tratamiento</h4>
+    <h4>1.11. Encargado del Tratamiento</h4>
     <p>
       Persona natural o jurídica que trata datos personales por cuenta del Responsable,
       conforme a sus instrucciones documentadas. Se detallan en el Anexo B.
     </p>
 
-    <h4>1.11. Subencargado del Tratamiento</h4>
+    <h4>1.12. Subencargado del Tratamiento</h4>
     <p>
       Persona natural o jurídica contratada por un Encargado para llevar a cabo actividades
       específicas de tratamiento por cuenta del Responsable.
     </p>
 
-    <h4>1.12. Transferencia Internacional de Datos</h4>
+    <h4>1.13. Transferencia Internacional de Datos</h4>
     <p>
       Comunicación de datos personales a un tercero establecido en un país distinto al del
       Responsable, incluyendo el acceso a dichos datos desde el extranjero.
     </p>
 
-    <h4>1.13. Violación de Seguridad de Datos Personales</h4>
+    <h4>1.14. Violación de Seguridad de Datos Personales</h4>
     <p>
       Toda acción u omisión que ocasione la destrucción, pérdida, alteración, comunicación o
       acceso no autorizado, accidental o ilícito, a datos personales objeto de tratamiento.
     </p>
 
-    <h4>1.14. Autoridad de Control</h4>
+    <h4>1.15. Autoridad de Control</h4>
     <p>
       Organismo público independiente encargado de supervisar la aplicación de la normativa de
       protección de datos personales en la jurisdicción correspondiente.
     </p>
 
-    <h4>1.15. Interesado</h4>
+    <h4>1.16. Interesado</h4>
     <p>
       Sinónimo de Titular del Dato, empleado indistintamente a lo largo del presente Instrumento.
     </p>
 
-    <h4>1.16. Perfilado</h4>
+    <h4>1.17. Perfilado</h4>
     <p>
       Toda forma de tratamiento automatizado de datos personales que consista en utilizar
       dichos datos para evaluar determinados aspectos personales de una persona natural,
@@ -433,26 +443,27 @@
       ubicación o movimientos.
     </p>
 
-    <h4>1.17. Elaboración de Perfiles con Fines Predictivos</h4>
+    <h4>1.18. Elaboración de Perfiles con Fines Predictivos</h4>
     <p>
       Modalidad específica de perfilado orientada a la anticipación probabilística de eventos
       futuros relacionados con el suministro eléctrico, sin que ello implique evaluación de
       aspectos personales del Titular.
     </p>
 
-    <h4>1.18. Token de Notificación Push</h4>
+    <h4>1.19. Token de Notificación Push (FCM)</h4>
     <p>
-      Identificador alfanumérico único, emitido por Firebase Cloud Messaging, que permite la
-      entrega de notificaciones específicas al Terminal Participante.
+      Identificador alfanumérico único, emitido por Firebase Cloud Messaging de Google, que
+      permite la entrega de notificaciones push específicas al Terminal Participante, asociado
+      únicamente al UUID técnico del dispositivo.
     </p>
 
-    <h4>1.19. UUID v4</h4>
+    <h4>1.20. UUID v4</h4>
     <p>
       Identificador Único Universal versión 4, generado aleatoriamente conforme a la
       especificación RFC 4122, sin incorporación de datos personales en su composición.
     </p>
 
-    <h4>1.20. k-Anonimato</h4>
+    <h4>1.21. k-Anonimato</h4>
     <p>
       Propiedad de un conjunto de datos por la cual cada registro es indistinguible de al
       menos <code>k-1</code> otros registros respecto a un conjunto de cuasi-identificadores,
@@ -558,17 +569,35 @@
   <h3>4.3. Telemetría de Red y Estado Energético del Terminal</h3>
   <p>
     La Plataforma recopila, con periodicidad configurable (por defecto, cada quince (15)
-    minutos), los siguientes datos técnicos:
+    minutos para heartbeats, y lecturas de RSSI cada dos (2) segundos durante la monitorización activa), los siguientes datos técnicos:
   </p>
   <ul>
     <li>Estado de vinculación a red inalámbrica (<code>conectado / desconectado</code>), sin registro de contraseñas, credenciales ni tráfico navegado;</li>
     <li>Tipo de transporte de red activo (<code>WiFi</code> frente a <code>Datos Móviles Celulares</code>) e intensidad general de señal en <code>dBm</code>;</li>
+    <li><strong>Intensidad específica de la señal WiFi (RSSI):</strong> Muestreo en decibelios-milivatio para calcular la derivada de atenuación y distinguir una desconexión abrupta (apagón) de un desvanecimiento de onda (movimiento del usuario);</li>
     <li>Estado de carga de batería (<code>cargando por corriente alterna AC</code> frente a <code>descargando en batería</code>) y porcentaje de carga;</li>
     <li>Marca temporal en formato de tiempo universal coordinado (UTC);</li>
-    <li>Modelo y fabricante del dispositivo, con exclusiva finalidad de diagnóstico técnico y segmentación estadística agregada.</li>
+    <li>Modelo y fabricante del dispositivo, con exclusiva finalidad de diagnóstico técnico y segmentación estadística agregada;</li>
+    <li><strong>Configuración del Usuario:</strong> Almacenamiento local y transmisión seudonimizada de la tenencia de UPS (sistema de respaldo) y hábitos de apagado de router, datos esenciales para la desambiguación de eventos.</li>
   </ul>
 
-  <h3>4.4. Datos Derivados de la Interacción con la Interfaz</h3>
+  <h3>4.4. Datos Derivados de la Actividad Física (Podómetro)</h3>
+  <p>
+    La Plataforma recopila lecturas del sensor de pasos (Podómetro) mediante el permiso
+    <code>ACTIVITY_RECOGNITION</code> de Android. Estos datos se utilizan <strong>exclusivamente</strong>
+    para determinar si el usuario se encuentra en movimiento físico. Si se detecta una actividad
+    peatonal significativa, el sistema infiere que la pérdida de conectividad WiFi se debe al
+    desplazamiento del usuario y cancela la alerta de apagón, evitando así falsos positivos.
+  </p>
+
+  <h3>4.5. Datos de Notificación Push</h3>
+  <p>
+    La Plataforma registra un Token de Firebase Cloud Messaging (FCM) emitido por Google,
+    asociado de forma unívoca al UUID del dispositivo, con la única finalidad de entregar
+    notificaciones de alerta temprana.
+  </p>
+
+  <h3>4.6. Datos Derivados de la Interacción con la Interfaz</h3>
   <p>
     La Plataforma podrá registrar —de manera agregada y sin vinculación a la identidad del
     Licenciatario— métricas de uso de funcionalidades: cantidad de veces que se consulta el
@@ -576,7 +605,7 @@
     apertura de la aplicación y patrones horarios de uso general.
   </p>
 
-  <h3>4.5. Datos de Diagnóstico y Errores</h3>
+  <h3>4.7. Datos de Diagnóstico y Errores</h3>
   <p>
     En caso de fallo técnico, la Plataforma podrá registrar información anónima de diagnóstico,
     comprendiendo exclusivamente: versión del binario, versión del sistema operativo, modelo
@@ -666,7 +695,7 @@
     </thead>
     <tbody>
       <tr>
-        <td>Telemetría cruda (heartbeats)</td>
+        <td>Telemetría cruda (heartbeats y RSSI)</td>
         <td>90 días</td>
         <td>Inicio del tratamiento</td>
       </tr>
@@ -764,6 +793,7 @@
     <li><strong>Cifrado en tránsito:</strong> toda comunicación con servidores se realiza mediante HTTPS/TLS 1.2 o superior;</li>
     <li><strong>Cifrado en reposo:</strong> los datos almacenados en la infraestructura de Supabase se cifran conforme a los estándares AES-256;</li>
     <li><strong>Control de acceso:</strong> políticas de Row Level Security (RLS) en la totalidad de las tablas;</li>
+    <li><strong>Arquitectura Edge:</strong> Uso de Cloudflare Workers para distribuir la carga y cachear respuestas (ETag y TTL de 30s), previniendo ataques de denegación de servicio (DDoS) durante picos de tráfico;</li>
     <li><strong>Autenticación multifactor:</strong> exigida para cuentas con privilegios administrativos;</li>
     <li><strong>Registro de auditoría:</strong> logs de acceso y modificaciones conservados durante el plazo establecido en el Anexo C;</li>
     <li><strong>Actualización periódica:</strong> revisión y aplicación de parches de seguridad conforme a las recomendaciones del fabricante;</li>
@@ -866,18 +896,48 @@
     legislación de su jurisdicción de residencia.
   </p>
 
-  <h2>Cláusula Duodécima — Cookies, Identificadores y Tecnologías Similares</h2>
+  <h2>Cláusula Duodécima — Permisos Sensibles, Cookies, Identificadores y Tecnologías Similares</h2>
 
+  <h3>12.1. Permisos del Sistema Operativo</h3>
   <p>
-    <span class="clause">12.1.</span> La Plataforma, en su modalidad de aplicación móvil, no
-    emplea cookies en el sentido estricto del término. No obstante, podrá emplear identificadores
-    técnicos análogos que cumplan finalidades equivalentes.
+    Para el correcto funcionamiento técnico del servicio de telemetría pasiva, la aplicación requiere la concesión de los siguientes permisos sensibles en el ecosistema Android, cuyo uso se detalla a continuación:
+  </p>
+  <table>
+    <thead>
+      <tr>
+        <th>Permiso Técnico</th>
+        <th>Finalidad Exclusiva</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><code>ACCESS_FINE_LOCATION</code> / <code>ACCESS_COARSE_LOCATION</code></td>
+        <td>Obtener las coordenadas del nodo para posicionarlo en el polígono de afectación.</td>
+      </tr>
+      <tr>
+        <td><code>ACCESS_BACKGROUND_LOCATION</code></td>
+        <td>Permitir que el servicio de monitoreo de red siga operando incluso si la aplicación está minimizada o la pantalla del dispositivo está apagada.</td>
+      </tr>
+      <tr>
+        <td><code>ACTIVITY_RECOGNITION</code></td>
+        <td>Leer el sensor de pasos (Podómetro) para desambiguar el movimiento físico del usuario de un apagón eléctrico real.</td>
+      </tr>
+      <tr>
+        <td><code>FOREGROUND_SERVICE_LOCATION</code></td>
+        <td>Mantener visible una notificación persistente que informe al usuario que el servicio de telemetría está activo, cumpliendo con las políticas de Android.</td>
+      </tr>
+      <tr>
+        <td><code>POST_NOTIFICATIONS</code></td>
+        <td>Desplegar las alertas push cuando se detecte un evento de apagón en la zona del usuario.</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>12.2. Identificadores y Tecnologías Similares</h3>
+  <p>
+    La Plataforma, en su modalidad de aplicación móvil, no emplea cookies en el sentido estricto del término. No obstante, podrá emplear identificadores técnicos análogos que cumplan finalidades equivalentes.
   </p>
 
-  <p>
-    <span class="clause">12.2.</span> Los identificadores técnicos empleados por la Plataforma
-    son:
-  </p>
   <ul>
     <li><code>UUID v4</code>: identificador del nodo, generado localmente y almacenado en SharedPreferences del dispositivo;</li>
     <li><code>FCM Token</code>: token de notificación push emitido por Firebase Cloud Messaging;</li>
@@ -885,8 +945,7 @@
   </ul>
 
   <p>
-    <span class="clause">12.3.</span> El Licenciatario podrá gestionar los identificadores
-    publicitarios a través de la configuración de su sistema operativo Android
+    El Licenciatario podrá gestionar los identificadores publicitarios a través de la configuración de su sistema operativo Android
     (Configuración → Google → Anuncios → Restablecer ID de publicidad o Eliminar ID de publicidad).
   </p>
 
@@ -894,7 +953,7 @@
 
   <p>
     <span class="clause">13.1.</span> La Plataforma emplea algoritmos de clustering espacial
-    (DBSCAN) y funciones geoespaciales (PostGIS) para la detección automatizada de apagones.
+    (DBSCAN) y funciones geoespaciales (PostGIS), así como lógicas de derivación matemática basadas en la intensidad de señal WiFi (RSSI) y conteo de pasos, para la detección automatizada de apagones.
     Dichos algoritmos operan exclusivamente sobre datos técnicos y agregados, sin elaborar
     perfiles personales del Licenciatario.
   </p>
@@ -924,8 +983,8 @@
   <p>
     <span class="clause">14.2. Filtros Anti-Abuso y Ponderación de Confianza (Trust Scoring).</span>
     El Sistema incorpora mecanismos automatizados de validación cruzada —cooldown de envío
-    por nodo, verificación de proximidad radial mediante distancia haversine y contraste con
-    telemetría pasiva de nodos vecinos—. SinLuz se reserva el derecho unilateral de descartar,
+    por nodo, verificación de proximidad radial mediante distancia haversine, contraste con
+    telemetría pasiva de nodos vecinos y uso de sensores de actividad—. SinLuz se reserva el derecho unilateral de descartar,
     atenuar el peso estadístico o bloquear silenciosamente (<em>shadowban</em>) las emisiones
     provenientes de identificadores que presenten patrones anómalos, reiterativos o
     incongruentes con las lecturas de la red vecinal.
@@ -1067,7 +1126,7 @@
     <span class="clause">19.2.</span> Los datos de mapas base y nomenclatura vial son provistos
     por colaboradores de <strong>OpenStreetMap</strong> (© OpenStreetMap contributors) bajo
     licencia ODbL, y las librerías de renderizado <strong>Leaflet</strong> bajo licencia
-    BSD-2-Clause.
+    BSD-2-Clause. El binario compilado distribuye estos activos de forma local para su ejecución offline.
   </p>
 
   <p>
@@ -1237,66 +1296,78 @@
       </tr>
       <tr>
         <td>A-04</td>
-        <td>Tipo de red activa</td>
+        <td>Intensidad de señal WiFi (RSSI)</td>
         <td>Técnico</td>
-        <td>Análisis de degradación</td>
+        <td>Diferenciación entre movimiento y caída abrupta</td>
       </tr>
       <tr>
         <td>A-05</td>
-        <td>Intensidad de señal (dBm)</td>
+        <td>Sensor de pasos (Podómetro)</td>
         <td>Técnico</td>
-        <td>Correlación de caídas celulares</td>
+        <td>Desambiguación de falsos positivos por actividad peatonal</td>
       </tr>
       <tr>
         <td>A-06</td>
-        <td>Estado de carga de batería</td>
+        <td>Tipo de red activa</td>
+        <td>Técnico</td>
+        <td>Análisis de degradación celular/WiFi</td>
+      </tr>
+      <tr>
+        <td>A-07</td>
+        <td>Intensidad de señal general (dBm)</td>
+        <td>Técnico</td>
+        <td>Correlación de caídas</td>
+      </tr>
+      <tr>
+        <td>A-08</td>
+        <td>Estado de carga y nivel de batería</td>
         <td>Técnico</td>
         <td>Desambiguación de apagón vs. batería agotada</td>
       </tr>
       <tr>
-        <td>A-07</td>
-        <td>Nivel de batería (%)</td>
-        <td>Técnico</td>
-        <td>Diagnóstico secundario</td>
-      </tr>
-      <tr>
-        <td>A-08</td>
+        <td>A-09</td>
         <td>Marca temporal UTC</td>
         <td>Técnico</td>
         <td>Construcción de series temporales</td>
       </tr>
       <tr>
-        <td>A-09</td>
+        <td>A-10</td>
         <td>Modelo y fabricante del dispositivo</td>
         <td>Técnico</td>
         <td>Diagnóstico y segmentación estadística</td>
       </tr>
       <tr>
-        <td>A-10</td>
+        <td>A-11</td>
         <td>Token FCM</td>
         <td>Pseudoanonimizado</td>
-        <td>Entrega de notificaciones</td>
+        <td>Entrega de notificaciones push</td>
       </tr>
       <tr>
-        <td>A-11</td>
+        <td>A-12</td>
         <td>Reportes ciudadanos manuales</td>
         <td>Personal</td>
         <td>Corroboración colaborativa</td>
       </tr>
       <tr>
-        <td>A-12</td>
+        <td>A-13</td>
         <td>Ubicaciones guardadas por el usuario</td>
         <td>Personal</td>
         <td>Monitoreo de puntos de interés</td>
       </tr>
       <tr>
-        <td>A-13</td>
+        <td>A-14</td>
+        <td>Configuración de UPS y Router</td>
+        <td>Técnico</td>
+        <td>Ajuste del motor de inferencia de apagones</td>
+      </tr>
+      <tr>
+        <td>A-15</td>
         <td>Registros de consentimiento</td>
         <td>Personal</td>
         <td>Auditoría y cumplimiento legal</td>
       </tr>
       <tr>
-        <td>A-14</td>
+        <td>A-16</td>
         <td>Datos de diagnóstico y errores</td>
         <td>Técnico</td>
         <td>Mejora del servicio</td>
@@ -1319,14 +1390,14 @@
       <tr>
         <td>Supabase Inc.</td>
         <td>Estados Unidos / Brasil (São Paulo)</td>
-        <td>Base de datos en la nube</td>
-        <td>Categorías A-01 a A-14</td>
+        <td>Base de datos en la nube (PostgreSQL)</td>
+        <td>Categorías A-01 a A-16</td>
       </tr>
       <tr>
         <td>Google LLC (Firebase Cloud Messaging)</td>
         <td>Estados Unidos</td>
         <td>Notificaciones push</td>
-        <td>Categoría A-10</td>
+        <td>Categoría A-11</td>
       </tr>
       <tr>
         <td>Google LLC (AdMob)</td>
@@ -1335,9 +1406,21 @@
         <td>Identificadores publicitarios del dispositivo</td>
       </tr>
       <tr>
+        <td>Cloudflare Inc.</td>
+        <td>Estados Unidos</td>
+        <td>Red de distribución (Edge Caching) para API de zonas</td>
+        <td>Ninguno (tráfico HTTPS cifrado)</td>
+      </tr>
+      <tr>
+        <td>OpenStreetMap Foundation</td>
+        <td>Reino Unido</td>
+        <td>Provisión de mapas base (empaquetados localmente)</td>
+        <td>Ninguno</td>
+      </tr>
+      <tr>
         <td>GitHub Inc.</td>
         <td>Estados Unidos</td>
-        <td>Alojamiento de la política de privacidad</td>
+        <td>Alojamiento de esta política de privacidad</td>
         <td>Ninguno (solo contenido estático)</td>
       </tr>
     </tbody>
@@ -1359,7 +1442,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr><td>Telemetría cruda</td><td>90 días</td><td>Registro del heartbeat</td></tr>
+      <tr><td>Telemetría cruda (heartbeats, RSSI)</td><td>90 días</td><td>Registro del heartbeat</td></tr>
       <tr><td>Reportes ciudadanos</td><td>180 días</td><td>Emisión del reporte</td></tr>
       <tr><td>Eventos de apagón (registro base)</td><td>24 meses</td><td>Finalización del evento</td></tr>
       <tr><td>Snapshots de conectividad</td><td>90 días</td><td>Generación del snapshot</td></tr>
@@ -1435,14 +1518,19 @@
         <td>Octubre 2026</td>
         <td>Reestructuración integral en 25 cláusulas + 5 anexos; adopción de estándares RGPD y LGPD como referencias interpretativas</td>
       </tr>
+      <tr>
+        <td>Rev. 7.3-ES</td>
+        <td>Octubre 2026</td>
+        <td>Adición explícita de telemetría de podómetro (Activity Recognition), Cloudflare Edge, OpenStreetMap, configuración de UPS y clarificación de permisos Android (Background Location).</td>
+      </tr>
     </tbody>
   </table>
 
   <footer>
-    © 2026 SinLuz · Instrumento Normativo Integral Rev. 7.2-ES<br>
+    © 2026 SinLuz · Instrumento Normativo Integral Rev. 7.3-ES<br>
     Plataforma colaborativa ciudadana independiente · Documento sujeto a actualizaciones periódicas<br>
     Este texto no constituye asesoría jurídica profesional · La versión auténtica es la publicada en esta URL oficial<br>
-    Última actualización: 3 de octubre de 2026
+    Última actualización: 20 de octubre de 2026
   </footer>
 
 </div>
